@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* Web Standardization Team, Author:JongWoon,LEE 2017.08.30 */
+
+/* Webfont: AritaBuri Light */
+@font-face {
+	font-family: 'AritaBuri';
+	font-style: normal;
+	font-weight: 100;
+	src: url('./AritaBuri/AritaBuriHL.eot');
+	src: local("※"),url('./AritaBuri/AritaBuriHL.eot?#iefix') format('embedded-opentype'),url('./AritaBuri/AritaBuriHL.woff') format('woff'),url('./AritaBuri/AritaBuriHL.ttf') format('truetype');
+	text-rendering: optimizeLegibility;
+}
+/* Webfont: AritaBuri Light */
+@font-face {
+	font-family: 'AritaBuri';
+	font-style: normal;
+	font-weight: 300;
+	src: url('./AritaBuri/AritaBuriL.eot');
+	src: local("※"),url('./AritaBuri/AritaBuriL.eot?#iefix') format('embedded-opentype'),url('./AritaBuri/AritaBuriL.woff') format('woff'),url('./AritaBuri/AritaBuriL.woff2') format('woff2'),url('./AritaBuri/AritaBuriL.ttf') format('truetype');
+	text-rendering: optimizeLegibility;
+}
+/* Webfont: AritaBuri Medium */
+@font-face {
+	font-family: 'AritaBuri';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./AritaBuri/AritaBuriM.eot');
+	src: local("※"),url('./AritaBuri/AritaBuriM.eot?#iefix') format('embedded-opentype'),url('./AritaBuri/AritaBuriM.woff') format('woff'),url('./AritaBuri/AritaBuriM.woff2') format('woff2'),url('./AritaBuri/AritaBuriM.ttf') format('truetype');
+	text-rendering: optimizeLegibility;
+}
+/* Webfont: AritaBuri SemiBold */
+@font-face {
+	font-family: 'AritaBuri';
+	font-style: normal;
+	font-weight: 600;
+	src: url('./AritaBuri/AritaBuriSB.eot');
+	src: local("※"),url('./AritaBuri/AritaBuriSB.eot?#iefix') format('embedded-opentype'),url('./AritaBuri/AritaBuriSB.woff') format('woff'),url('./AritaBuri/AritaBuriSB.woff2') format('woff2'),url('./AritaBuri/AritaBuriSB.ttf') format('truetype');
+	text-rendering: optimizeLegibility;
+}
+/* Webfont: AritaBuri Bold */
+@font-face {
+	font-family: 'AritaBuri';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./AritaBuri/AritaBuriB.eot');
+	src: local("※"),url('./AritaBuri/AritaBuriB.eot?#iefix') format('embedded-opentype'),url('./AritaBuri/AritaBuriB.woff') format('woff'),url('./AritaBuri/AritaBuriB.woff2') format('woff2'),url('./AritaBuri/AritaBuriB.ttf') format('truetype');
+	text-rendering: optimizeLegibility;
+}

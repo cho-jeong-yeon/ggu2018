@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>표준 레이아웃(서브)</title>
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/components.css" />
+</head>
+
+<body>
+	<!-- Accessibility -->
+	<a id="uppermost" href="#contents" class="skip-to">본문 바로가기</a>
+	<div id="wrap">
+		<header id="header">
+			<h1 class="logo">로고</h1>
+			<nav>
+				<ul id="gnb">
+					<li><a href="#">대매뉴#1</a></li>
+				</ul>
+			</nav>
+			<div class="util">로그인/회원가입/다국어선택/햄버거매뉴 등등</div>
+		</header>
+		<main id="main">
+			<div id="spot"></div>
+			<div class="cont-wrap vertical">
+				<!-- horizontal 클래스시 상단에 네비게이션이 위치하게 작업 -->
+				<div id="snb">
+					<h2 class="snb-title">서브타이틀</h2>
+					<nav>
+						<ul class="depth1">
+							<li><a href="#">서브매뉴</a>
+								<ul class="depth2">
+									<li><a href="#">하위매뉴</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div id="contents">
+					<div class="cont-top">
+						<div class="path">경로 &gt; 경로 &gt; <strong>현재경로</strong></div>
+						<div class="cont-util">sns요소 or 확대/축소 or 프린트</div>
+					</div>
+					<div class="cont-mid">
+						<div class="container">
+						<!-- 컨텐츠 영역 -->
+						<!-- // -->
+						</div>
+					</div>
+					<div class="cont-bot">만족도조사 영역?</div>
+
+				</div>
+			</div>
+			<a href="#uppermost" class="go-top">TOP</a>
+		</main>
+		<footer id="footer">
+			<p class="copyright">카피영역</p>
+			<address>주소영역</address>
+		</footer>
+	</div>
+	<script type="text/javascript" src="../../js/jquery-2.2.4.min.js"></script>
+</body>
+
+</html>
