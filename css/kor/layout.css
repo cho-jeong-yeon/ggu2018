@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /* 퀵메뉴 */
-#quick .menu { position: absolute; right: 0; top: 50%; z-index: 100; width: 6.2rem; -webkit-transition: all .2s; transition: all .2s; }
-
-#quick .menu a { display: block; position: relative; height: 2.5rem; text-align: center; font-size: .75rem; color: #fff; -webkit-transition: all .2s; transition: all .2s; }
-
-#quick .menu a:before { content: ""; position: absolute; right: 0; top: 0; z-index: -1; width: 6.2rem; height: 100%; background-color: #ffb90a; -webkit-transition: all .2s .1s; transition: all .2s .1s; }
-
-#quick .menu a:after { position: absolute; right: 55px; top: 50%; width: 0; height: 1px; background-color: #fff; content: ''; transition: all .2s; -webkit-transition: all .2s; }
+#quick .menu {position:absolute; left:-265px; top:350px; z-index:100; width:210px; transition:all .2s; -webkit-transition:all .2s;}
+#quick .menu a {display:block; position:relative; height:65px; margin-bottom:20px; padding-left:60px; font-size:.7rem; color:#fff; line-height:65px; transition:all .2s; -webkit-transition:all .2s;}
+#quick .menu a:before {position:absolute; left:0; top:0; z-index:-1; width:0; height:100%; background-color:#30d3a6; background:linear-gradient(to right, #54c3c1, #30d3a6); content:''; transition:all .2s .1s; -webkit-transition:all .2s .1s;}
+#quick .menu a:after {position:absolute; right:55px; top:50%; width:0; height:1px; background-color:#fff; content:''; transition:all .2s; -webkit-transition:all .2s;}
+#quick .menu .active a {color:#333; font-weight:600;}
+#quick .menu .active a:before {width:100%; transition:all .2s; -webkit-transition:all .2s;}
+#quick .menu .active a:after {right:-35px; width:90px; transition:all .2s .1s; -webkit-transition:all .2s .1s;}
 
 /* 퀵메뉴 내용 */
 #quick .group { overflow: hidden; position: fixed; left: 50%; top: 50%; z-index: 50; width: 0; height: 0; background-color: #fdd000; opacity: 0; transition: all .3s; -webkit-transition: all .3s; }
