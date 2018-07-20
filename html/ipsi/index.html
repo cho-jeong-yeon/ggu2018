@@ -17,6 +17,7 @@
 	<script src="../../js/TweenMax.min.js"></script>
 	<script src="../../js/animation.gsap.js"></script>
 	<script src="../../js/common.js"></script>
+	<script src="../../js/ipsi/common.js"></script>
 	<script src="../../js/ipsi/main.js"></script>
 </head>
 
@@ -27,67 +28,73 @@
 	<header id="header">
 		<div class="container">
 			<h1 class="logo"><a href="#" class="origin"><span class="sr-only">GGU 금강대학교</span></a><a href="#" class="admission-main"><img src="../../images/ipsi/header_logo2.png" alt="입학안내"></a></h1>
-			<nav>
+			<nav class="nav">
 				<a href="#" class="all-menu"><i class="icon"></i><span class="sr-only">전체메뉴</span></a>
-				<ul id="gnb" class="gnb">
-					<li class="depth1">
-						<a href="">입학전형</a>
-						<ul class="depth2">
-							<li><a href="sub0101.html">수시모집</a>
-								<ul class="depth3">
-									<li><a href="sub0101.html">모집요강</a></li>
-								</ul>
-							</li>
-							<li><a href="sub0102.html">정시모집</a></li>
-							<li><a href="sub0103.html">재외국민/외국인</a></li>
-							<li><a href="sub0104.html">편입학</a></li>
-							<li><a href="sub0105.html">기타모집</a></li>
-						</ul>
-					</li>
-					<li class="depth1">
-						<a href="">입학자료실</a>
-						<ul class="depth2">
-							<li><a href="sub0201.html">입시통계</a>
-								<ul class="depth3">
-									<li><a href="sub0201.html">입학설명회/특강</a></li>
-								</ul>
-							</li>
-							<li><a href="sub0202.html">면접기출문제</a></li>
-							<li><a href="sub0203.html">제출서류양식</a></li>
-						</ul>
-					</li>
-					<li class="depth1">
-						<a href="">입학도우미</a>
-						<ul class="depth2">
-							<li><a href="sub0301.html">공지사항</a></li>
-							<li><a href="sub0302.html">FAQ</a></li>
-							<li><a href="sub0303.html">Q&A</a></li>
-							<li><a href="sub0304.html">전형일정안내</a></li>
-							<li><a href="sub0305.html">입학자료 우편발송신청</a></li>
-							<li><a href="sub0306.html">성적산출</a></li>
-							<li><a href="sub0307.html">인터넷원서접수</a></li>
-							<li><a href="sub0308.html">원서접수조회</a></li>
-							<li><a href="sub0309.html">합격자조회</a></li>
-							<li><a href="sub0310.html">경쟁률조회</a></li>
-						</ul>
-					</li>
-					<li class="depth1">
-						<a href="">대학전공</a>
-						<ul class="depth2">
-							<li><a href="sub0401.html">전공안내</a></li>
-							<li><a href="sub0402.html">다양한 전공제도</a></li>
-						</ul>
-					</li>
-					<li class="depth1">
-						<a href="">학교안내</a>
-						<ul class="depth2">
-							<li><a href="sub0401.html">견학프로그램</a></li>
-							<li><a href="sub0402.html">기숙사</a></li>
-							<li><a href="sub0402.html">캠퍼스맵</a></li>
-							<li><a href="sub0402.html">입학홍보팀오는길</a></li>
-						</ul>
-					</li>
-				</ul>
+				<div id="gnb" class="gnb">
+					<div class="desc">
+						<strong class="title">금강대학교<br> 입학안내</strong>
+						<span>Geumgang University</span>
+					</div>
+					<ul>
+						<li class="depth1">
+							<a href="">입학전형</a>
+							<ul class="depth2">
+								<li><a href="sub0101.html">수시모집</a>
+									<ul class="depth3">
+										<li><a href="sub0101.html">모집요강</a></li>
+									</ul>
+								</li>
+								<li><a href="sub0102.html">정시모집</a></li>
+								<li><a href="sub0103.html">재외국민/외국인</a></li>
+								<li><a href="sub0104.html">편입학</a></li>
+								<li><a href="sub0105.html">기타모집</a></li>
+							</ul>
+						</li>
+						<li class="depth1">
+							<a href="">입학자료실</a>
+							<ul class="depth2">
+								<li><a href="sub0201.html">입시통계</a>
+									<ul class="depth3">
+										<li><a href="sub0201.html">입학설명회/특강</a></li>
+									</ul>
+								</li>
+								<li><a href="sub0202.html">면접기출문제</a></li>
+								<li><a href="sub0203.html">제출서류양식</a></li>
+							</ul>
+						</li>
+						<li class="depth1">
+							<a href="">입학도우미</a>
+							<ul class="depth2">
+								<li><a href="sub0301.html">공지사항</a></li>
+								<li><a href="sub0302.html">FAQ</a></li>
+								<li><a href="sub0303.html">Q&A</a></li>
+								<li><a href="sub0304.html">전형일정안내</a></li>
+								<li><a href="sub0305.html">입학자료 우편발송신청</a></li>
+								<li><a href="sub0306.html">성적산출</a></li>
+								<li><a href="sub0307.html">인터넷원서접수</a></li>
+								<li><a href="sub0308.html">원서접수조회</a></li>
+								<li><a href="sub0309.html">합격자조회</a></li>
+								<li><a href="sub0310.html">경쟁률조회</a></li>
+							</ul>
+						</li>
+						<li class="depth1">
+							<a href="">대학전공</a>
+							<ul class="depth2">
+								<li><a href="sub0401.html">전공안내</a></li>
+								<li><a href="sub0402.html">다양한 전공제도</a></li>
+							</ul>
+						</li>
+						<li class="depth1">
+							<a href="">학교안내</a>
+							<ul class="depth2">
+								<li><a href="sub0401.html">견학프로그램</a></li>
+								<li><a href="sub0402.html">기숙사</a></li>
+								<li><a href="sub0402.html">캠퍼스맵</a></li>
+								<li><a href="sub0402.html">입학홍보팀오는길</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 				<a href="#" class="total-search"><i class="xi-search"></i></a>
 				<div class="total-search-layer">
 					<input type="text" placeholder="검색어를 입력하세요">
@@ -115,106 +122,17 @@
 			<li><a href="">POPUP</a></li>
 		</ul>
 
-		<script type="text/javascript">
-			$('#quick .menu').find('a').on('mouseenter focusin', function()
-			{
-				$(this).parent('li').siblings('li').removeClass('active');
-				$(this).parent('li').addClass('active');
-			});
-
-			$('#quick .menu').find('a').on('click', function()
-			{
-				$(this).parents('#quick').addClass('active');
-
-				return false;
-			});
-		</script>
-
 		<article class="group">
 			<div class="item">
-				<h2><img src="img/logo.gif" alt=""></h2>
-
+				<h2>팝업존</h2>
 				<ul class="banner">
-					<li class="active">
-						<a href="">
-							<img src="img/banner1.png" alt="">
-							<span>홍보동영상</span>
-						</a>
-					</li>
 					<li>
-						<a href="">
-							<img src="img/banner2.png" alt="">
-							<span>웹갤러리</span>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="img/banner3.png" alt="">
-							<span>캠퍼스맵</span>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="img/banner4.png" alt="">
-							<span>오시는길</span>
+						<a href="#">
+							<img src="img/popupzone1_sample.jpg" alt="">
 						</a>
 					</li>
 				</ul>
-
-				<script type="text/javascript">
-					$('#quick .banner').find('a').on('mouseenter focusin', function()
-					{
-						$(this).parent('li').siblings('li').removeClass('active');
-						$(this).parent('li').addClass('active');
-					});
-				</script>
-
-				<ul class="link">
-					<li>
-						<h3>입학정보</h3>
-						<a href="" class="active"><span>수시모집</span></a>
-						<a href=""><span>정시모집</span></a>
-						<a href=""><span>편입학</span></a>
-						<a href=""><span>외국인</span></a>
-					</li>
-					<li>
-						<h3>입시상담</h3>
-						<a href=""><span>온라인<br>브로셔</span></a>
-						<a href=""><span>입시자료<br>다운</span></a>
-						<a href=""><span>입시자료<br>요청실</span></a>
-						<a href=""><span>내신성적<br>산출</span></a>
-						<a href=""><span>입시결과</span></a>
-						<a href=""><span>자주묻는<br>질문</span></a>
-						<a href=""><span>묻고 답하기</span></a>
-					</li>
-					<li>
-						<h3>입시상담</h3>
-						<a href="" class="active"><span>인터넷<br>원서접수</span></a>
-						<a href=""><span>원서접수<br>확인</span></a>
-						<a href=""><span>합격자 조회</span></a>
-						<a href=""><span>장학제도</span></a>
-						<a href=""><span>학부안내</span></a>
-					</li>
-				</ul>
-
-				<script type="text/javascript">
-					$('#quick .link').find('a').on('mouseenter focusin', function()
-					{
-						$(this).siblings('a').removeClass('active');
-						$(this).addClass('active');
-					});
-				</script>
-
 				<a href="" class="close"></a>
-
-				<script type="text/javascript">
-					$('#quick .group').find('.close').on('click', function()
-					{
-						$(this).parents('#quick').removeClass('active');
-
-						return false;
-					});
-				</script>
 			</div>
 		</article>
 	</div>
@@ -278,12 +196,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<!--
-			<div class="list02">
-		  	<div class="bg"></div>
-			</div>
-		-->
+			</div>			
 	  </div>
 	  <div id="contents">
 	    <section class="section1 notice">

@@ -1,4 +1,4 @@
-$(document).ready(function(){  
+$(document).ready(function(){
 
   $(".section1 .card-list").bxSlider({
 	  auto: true,
@@ -13,4 +13,16 @@ $(document).ready(function(){
 		slideWidth : 300
 	});
 
+  $('#quick .menu').find('a').on('click', function()
+  {
+    $(this).parents('#quick').addClass('active');
+
+    return false;
+  });
+  $('#quick .group').find('.close').on('click', function()
+  {
+    $(this).parents('#quick').removeClass('active');
+
+    return false;
+  });
 });
