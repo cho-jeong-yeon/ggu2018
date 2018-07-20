@@ -73,6 +73,21 @@ $(document).ready(function(){
   });
 
 
+  //이달의행사
+  $('.event .calendar > ul').bxSlider
+  ({
+    auto			: false,
+    autoHover		: true,
+    infiniteLoop: false,
+    mode: 'fade',
+    speed			: 1000,
+    pause			: 5000,
+    responsive		: true,
+    pager			: false,
+    autoControls	: false,
+    controls		: true
+  });
+
   //금강을 읽다
   $('.webzine ul').bxSlider
   ({
@@ -131,8 +146,6 @@ $(document).ready(function(){
     }, 5500);
 
 
-
-
   $('.related .group').find('h2 a').on('click', function(){
 	if ($(this).parents('.group').hasClass('active') == false){
 		$(this).parents('.group').addClass('active');
@@ -141,6 +154,15 @@ $(document).ready(function(){
 	}
 	return false;
 	});
+
+
+
+  //취업공지 행정공지
+  $('.latest').find('h2 a').on('mouseenter focusin', function(){
+		$(this).parents('article.group').siblings('.group').removeClass('active');
+		$(this).parents('article.group').addClass('active');
+	});
+
 
 
 
