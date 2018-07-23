@@ -1,47 +1,153 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
 	<meta charset="utf-8">
-	<title>표준 레이아웃(서브)</title>
-	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
-	<link rel="stylesheet" type="text/css" href="../../css/components.css" />
+	<title>글로벌 문화 협력의 중심 대학 금강대학교</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../../css/common/common.css" />
+	<link rel="stylesheet" href="../../css/common/layout.css" />
+	<link rel="stylesheet" href="../../css/common/webfonts.css" />
+	<link rel="stylesheet" href="../../css/ipsi/layout.css" />
+	<link rel="stylesheet" href="../../css/ipsi/sub.css" />
+
+	<script src="../../js/jquery-2.2.4.min.js"></script>
+	<script src="../../js/jquery.bxslider.min.js"></script>
+	<script src="../../js/ScrollMagic.min.js"></script>
+	<script src="../../js/TweenMax.min.js"></script>
+	<script src="../../js/animation.gsap.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/ipsi/common.js"></script>
+	<script src="../../js/ipsi/sub.js"></script>
 </head>
 
 <body>
-	<!-- Accessibility -->
-	<a id="uppermost" href="#contents" class="skip-to">본문 바로가기</a>
-	<div id="wrap">
-		<header id="header">
-			<h1 class="logo">로고</h1>
-			<nav>
-				<ul id="gnb">
-					<li><a href="#">대매뉴#1</a></li>
-				</ul>
+<!-- Accessibility -->
+<a id="uppermost" href="#contents" class="skip-to">본문 바로가기</a>
+<div id="wrap">
+	<header id="header">
+		<div class="container">
+			<h1 class="logo"><a href="#" class="origin"><span class="sr-only">GGU 금강대학교</span></a><a href="#" class="admission-main"><img src="../../images/ipsi/header_logo2.png" alt="입학안내"></a></h1>
+			<nav class="nav">
+				<a href="#" class="all-menu"><i class="icon"></i><span class="sr-only">전체메뉴</span></a>
+				<div id="gnb" class="gnb">
+					<div class="desc">
+						<strong class="title">금강대학교<br> 입학안내</strong>
+						<span>Geumgang University</span>
+					</div>
+					<ul>
+						<li class="depth1">
+							<a href="">입학전형</a>
+							<ul class="depth2">
+								<li><a href="sub0101.html">수시모집</a>
+									<ul class="depth3">
+										<li><a href="sub0101.html">모집요강</a></li>
+									</ul>
+								</li>
+								<li><a href="sub0102.html">정시모집</a></li>
+								<li><a href="sub0103.html">재외국민/외국인</a></li>
+								<li><a href="sub0104.html">편입학</a></li>
+								<li><a href="sub0105.html">기타모집</a></li>
+							</ul>
+						</li>
+						<li class="depth1">
+							<a href="">입학자료실</a>
+							<ul class="depth2">
+								<li><a href="sub0201.html">입시통계</a>
+									<ul class="depth3">
+										<li><a href="sub0201.html">입학설명회/특강</a></li>
+									</ul>
+								</li>
+								<li><a href="sub0202.html">면접기출문제</a></li>
+								<li><a href="sub0203.html">제출서류양식</a></li>
+							</ul>
+						</li>
+						<li class="depth1">
+							<a href="">입학도우미</a>
+							<ul class="depth2">
+								<li><a href="sub0301.html">공지사항</a></li>
+								<li><a href="sub0302.html">FAQ</a></li>
+								<li><a href="sub0303.html">Q&A</a></li>
+								<li><a href="sub0304.html">전형일정안내</a></li>
+								<li><a href="sub0305.html">입학자료 우편발송신청</a></li>
+								<li><a href="sub0306.html">성적산출</a></li>
+								<li><a href="sub0307.html">인터넷원서접수</a></li>
+								<li><a href="sub0308.html">원서접수조회</a></li>
+								<li><a href="sub0309.html">합격자조회</a></li>
+								<li><a href="sub0310.html">경쟁률조회</a></li>
+							</ul>
+						</li>
+						<li class="depth1">
+							<a href="">대학전공</a>
+							<ul class="depth2">
+								<li><a href="sub0401.html">전공안내</a></li>
+								<li><a href="sub0402.html">다양한 전공제도</a></li>
+							</ul>
+						</li>
+						<li class="depth1">
+							<a href="">학교안내</a>
+							<ul class="depth2">
+								<li><a href="sub0401.html">견학프로그램</a></li>
+								<li><a href="sub0402.html">기숙사</a></li>
+								<li><a href="sub0402.html">캠퍼스맵</a></li>
+								<li><a href="sub0402.html">입학홍보팀오는길</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="total-search"><i class="xi-search"></i></a>
+				<div class="total-search-layer">
+					<input type="text" placeholder="검색어를 입력하세요">
+					<a href="#" class="total-search-btn"><i class="xi-search"></i></a>
+					<a href="#" class="total-search-close"><i class="xi-close"></i></a>
+				</div>
 			</nav>
-			<div class="util">로그인/회원가입/다국어선택/햄버거매뉴 등등</div>
-		</header>
+			<div class="branch-site">
+				<ul>
+					<li><a href="#"><span>입학안내</span></a></li>
+					<li><a href="#"><span>대학교</span></a></li>
+					<li><a href="#"><span>대학원</span></a></li>
+				</ul>
+			</div>
+			<div class="util">
+				<a href="#" class="eng-site" target="_blank" title="새창으로 열림"><i class="xi-globus"></i><span>en</span></a>
+				<a href="#" class="member"><i class="xi-user"></i><span class="sr-only">멤버사이트</span></a>
+				<a href="#" class="login"><i class="xi-unlock"></i><span class="sr-only">로그인</span></a>
+				<!-- <a href="#" class="logout"><i class="xi-lock"></i><span class="sr-only">로그아웃</span></a> -->
+			</div>
+		</div>
+	</header>
 		<main id="main">
-			<div id="spot"></div>
-			<div class="cont-wrap vertical">
-				<!-- horizontal 클래스시 상단에 네비게이션이 위치하게 작업 -->
+			<div id="spot" class="sub1">
 				<div id="snb">
 					<h2 class="snb-title">서브타이틀</h2>
 					<nav>
 						<ul class="depth1">
-							<li><a href="#">서브매뉴</a>
+							<li><a href="#">서브메뉴</a>
 								<ul class="depth2">
-									<li><a href="#">하위매뉴</a></li>
+									<li><a href="#">하위메뉴</a></li>
 								</ul>
 							</li>
 						</ul>
 					</nav>
-				</div>
-				<div id="contents">
 					<div class="cont-top">
 						<div class="path">경로 &gt; 경로 &gt; <strong>현재경로</strong></div>
 						<div class="cont-util">sns요소 or 확대/축소 or 프린트</div>
+						<div class="sns active">
+							<a href="#"><i class="xi-share-alt"></i><span class="sr-only">sns</span></a>
+							<ul class="sns-shortcut">
+								<li class="facebook"><a href="#" target="_blank"><i class="xi-facebook"></i><span class="sr-only">페이스북</span></a></li>
+								<li class="twitter"><a href="#" target="_blank"><i class="xi-twitter"></i><span class="sr-only">트위터</span></a></li>
+								<li class="kakaostory"><a href="#" target="_blank"><i class="xi-kakaostory"></i><span class="sr-only">카카오스토리</span></a></li>
+							</ul>
+						</div>
 					</div>
+				</div>
+			</div>
+			<div class="cont-wrap horizontal">
+				<!-- horizontal 클래스시 상단에 네비게이션이 위치하게 작업 -->
+
+				<div id="contents">
 					<div class="cont-mid">
 						<div class="container">
 						<!-- 컨텐츠 영역 -->
@@ -52,14 +158,107 @@
 
 				</div>
 			</div>
-			<a href="#uppermost" class="go-top">TOP</a>
 		</main>
+		<a href="#uppermost" class="go-top">TOP</a>
 		<footer id="footer">
-			<p class="copyright">카피영역</p>
-			<address>주소영역</address>
+			<div class="branch-site">
+				<div class="container">
+					<a href="#">대한불교천태종</a>
+					<a href="#" class="point1">발전기금</a>
+					<a href="#">불교문화연구소</a>
+					<a href="#">교수학습지원센터</a>
+					<a href="#">원각도서관</a>
+					<a href="#">학생상담센터</a>
+					<a href="#">평생교육원</a>
+					<a href="#">금강어학원</a>
+					<a href="#">산학협력단</a>
+				</div>
+			</div>
+			<div class="footer-nav">
+				<div class="container">
+					<a href="#">대학정보공시</a>
+					<a href="#">자체평가</a>
+					<a href="#">예결산 공고</a>
+					<a href="#">학교 홈페이지 관리규정</a>
+					<a href="#">웹접근성 정책</a>
+					<a href="#" class="point1">개인정보침해 및 처리방침</a>
+					<a href="#">이메일무단수집거부</a>
+					<div class="sns">
+						<a href="#"><i class="xi-facebook"></i><span class="sr-only">페이스북</span></a>
+						<a href="#"><i class="xi-naver-square"></i><span class="sr-only">네이버</span></a>
+						<a href="#"><i class="xi-youtube-play"></i><span class="sr-only">유투브</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-section">
+				<div class="container">
+					<span class="footer-logo"></span>
+					<p class="copyright">32906 충청남도 논산시 상월면 상월로 522 금강대학교 대표전화번호 (041) 731-3114</p>
+				  <address>COPYRIGHTⓒ2018 GEUMGANG UNIVERSITY. ALL RIGHTS RESERVED.</address>
+					<div class="relate-site">
+						<div class="site-select1">
+							<span class="title">교내정보 홈페이지 바로가기<i class="xi-angle-up-min"></i></span>
+							<ul class="list">
+								<li><a href="/kor/info/tel.php">교내전화번호</a></li>
+								<li><a href="/kor/campus_life/public_space_1.php#bab">금주의식단</a></li>
+								<li><a href="/kor/campus_life/regular_run.php">버스운행안내</a></li>
+								<li><a href="/kor/graduate/register.php#digital">사이버학점교류</a></li>
+								<li><a href="/kor/graduate/schedule.php">학사일정</a></li>
+								<li><a href="/2012/kum/bbs/board.php?bo_table=cl_dongari">동아리소개</a></li>
+								<li><a href="/kor/campus_life/health_center.php">편의시설안내</a></li>
+								<li><a href="/kor/info/location/car.php">오시는길</a></li>
+								<li><a href="https://uni.webminwon.com/servlet/WMINDEX?COMMAND=ACTIVEX&amp;GIWANNO=024414" target="_blank" title="새창">인터넷증명발급</a></li>
+								<li><a href="http://ggu.smileedi.com/" target="_blank" title="새창">전자세금계산서</a></li> <li><a href="http://www.academyinfo.go.kr/UIPISA/uipnh/unt/ipsrch/UntUnvAcdtSrchPupExtrn.do?schlId=0000224" target="_blank" title="새창으로 열림">대학정보공시 </a></li>
+							</ul>
+						</div>
+						<div class="site-select2">
+							<span class="title">대학/대학원 홈페이지 바로가기<i class="xi-angle-up-min"></i></span>
+							<dl class="list">
+								<dt>대학</dt>
+								<dd>
+									<ul>
+									<li><a href="/kor/colleges/2017_info/1_buddhist_division.php">불교문화학부</a></li>
+									<li><a href="/kor/colleges/2017_info/4_global_convergence.php">글로벌융합학부</a></li>
+									<li><a href="/kor/colleges/2017_info/9_global_culture.php">글로벌교양학부</a></li>
+									</ul>
+								</dd>
+								<dt>대학원</dt>
+								<dd>
+									<ul>
+										<li><a href="/graduate/main.php">일반대학원</a></li>
+										<li><a href="/graduate/html/major_info.php">사회복지불교학과</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<div class="site-select3">
+							<span class="title">부속기관 홈페이지 바로가기<i class="xi-angle-up-min"></i></span>
+							<ul class="list">
+								<li><a href="http://lib.ggu.ac.kr/" target="_blank" title="새창">원각도서관</a></li>
+								<li><a href="http://lms.ggu.ac.kr/" target="_blank" title="새창">교수학습지원센터</a></li>
+								<li><a href="/kor/institute/information.php">정보지원센터</a></li>
+								<li><a href="http://giacf.ggu.ac.kr/" target="_blank" title="새창">산학협력단</a></li>
+								<li><a href="http://dorm.ggu.ac.kr/" target="_blank" title="새창">기숙사</a></li>
+								<li><a href="http://health.ggu.ac.kr/" target="_blank" title="새창">보건소</a></li>
+								<li><a href="http://job.ggu.ac.kr/" target="_blank" title="새창">취·창업지원센터</a></li>
+								<li><a href="http://gcbs.ggu.ac.kr/" target="_blank" title="새창">불교문화연구소</a></li>
+								<li><a href="/kor/institute/interpret.php">통번역연구소</a></li>
+								<li><a href="/kor/institute/social_welfare.php">사회복지연구소</a></li>
+								<li><a href="/kor/institute/student_life.php">학생상담센터</a></li>
+								<li><a href="http://glc.ggu.ac.kr/" target="_blank" title="새창">금강어학원</a></li>
+								<li><a href="http://ggu.ac.kr/kor/institute/lifelong_edu.php" target="_blank" title="새창">평생교육원</a></li>
+								<li><a href="/kor/institute/press.php" target="_blank" title="새창">신문방송사</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-banner">
+						<a href="#"><img src="../../images/ipsi/footer_banner1.png" alt=""></a>
+						<a href="#"><img src="../../images/ipsi/footer_banner2.png" alt=""></a>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
-	<script type="text/javascript" src="../../js/jquery-2.2.4.min.js"></script>
 </body>
 
 </html>

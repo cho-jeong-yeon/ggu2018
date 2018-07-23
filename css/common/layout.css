@@ -39,9 +39,9 @@
 @keyframes down { from { top: 0; }
   to { top: 10px; } }
 /* 위로가기 */
-.top-btn { position: absolute; left: 50%; z-index: 1; width: 2.5rem; height: 2.5rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); margin-left: 550px; padding-top: 13px; border: 1px solid #333; background-color: #fff; font-size: .6rem; opacity: 1; text-align: center; }
+.go-top { position: absolute; left: 50%; z-index: 1; width: 2.5rem; height: 2.5rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); margin-left: 550px; padding-top: 13px; border: 1px solid #333; background-color: #fff; font-size: .6rem; opacity: 1; text-align: center; }
 
-.top-btn:before { display: block; width: 7px; height: 7px; margin: 0 auto; border-left: 2px solid #46cbb6; border-top: 2px solid #46cbb6; content: ''; transform: rotate(45deg); -webkit-transform: rotate(45deg); transition: all .2s; -webkit-transition: all .2s; }
+.go-top:before { display: block; width: 7px; height: 7px; margin: 0 auto; border-left: 2px solid #46cbb6; border-top: 2px solid #46cbb6; content: ''; transform: rotate(45deg); -webkit-transform: rotate(45deg); transition: all .2s; -webkit-transition: all .2s; }
 
 /* ========== 하단 ========== */
 #footer { color: #9d9d9d; font-size: .7rem; line-height: 1.5; /*
