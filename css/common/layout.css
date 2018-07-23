@@ -66,6 +66,47 @@
 .cont-wrap .cont-mid::before { content: ""; display: table; }
 .cont-wrap .cont-mid::after { content: ""; display: block; clear: both; }
 
+/* 페이지 타이틀 */
+.page-title {margin-bottom: 2.5rem; text-align:center; font-family: "Nanum Square";}
+.page-title h1.title {font-size:1.8rem; margin-bottom: .5rem; color:#333;}
+.page-title p {font-size:.75rem; color:#666;}
+
+
+
+/*=============== 공통 스타일 ===============*/
+.cont-wrap .cont-mid {padding: 2.5rem 0;}
+strong.title {display:block;}
+hr {display:block; clear:both;}
+
+
+
+/* 탭메뉴 */
+.tabs {display:table; table-layout:fixed; width: 100%; margin: 2.5rem auto;}
+.tabs > li {display:table-cell; text-align:center;}
+.tabs > li > a {display:block; height:3.1rem; border:1px solid #ddd; background:#f9f9f9; line-height: 3.1rem; margin-left: -1px; position: relative;}
+.tabs > li.active a {border-bottom-color:#fff; border-top:2px solid #000; background:#fff;}
+
+/* 라인 박스 */
+.line-box:first-of-type {border-top:1px solid #000; margin-top: 2.5rem ;}
+.line-box:last-of-type {margin-bottom: 2.5rem;}
+.line-box {padding: 2.3rem 0; border-bottom:1px solid #ddd;}
+.line-box > div:first-of-type {padding-left: 0;}
+.line-box > div:last-of-type {padding-right: 0;}
+.line-box::after {content:''; display:block; clear:both;}
+strong.title {font-size:1rem; color:#000; margin-bottom: 1rem; position: relative;}
+strong.title.bul {padding-top: 1rem; }
+strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:#000; position:absolute; top:.6rem; left:0;}
+.line-box .en {display:block; margin: 1rem 0; color:#ccc; font-size:1.9rem; font-weight: 200;}
+.line-box p {margin: 1rem 0;}
+.line-box .bnt {margin-top: 1.9rem;}
+
+/* 버튼 */
+.btn {display: inline-block; margin-bottom: 0; font-family: 'Noto Sans KR'; font-weight: 300; font-size:.75rem; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: bottom; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; color: #666; background-color: #fff; transition: all .25s ease; border: 1px solid #ddd; padding:.5rem 1.1rem; font-family:inherit; min-width:10.3rem;}
+.btn:hover {border-color:#000; color:#000;}
+.btn > i {color:#000; font-size:.8rem; margin-left: 1.5rem; float:right;}
+
+
+
 /* 스크롤 다운 */
 .down { margin-top: 4rem; text-align: center; color: #fff; }
 .down::after { display: block; position: relative; font-size: 8px; content: '▼'; -webkit-animation: down 1s infinite alternate; animation: down 1s infinite alternate; }
