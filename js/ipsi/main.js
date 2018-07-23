@@ -25,4 +25,16 @@ $(document).ready(function(){
 
     return false;
   });
+  $("#quick .banner").bxSlider({
+	  auto: true,
+	  autoControls: false,
+	  stopAutoOnClick: true,
+		mode : 'vertical',
+		controls : false,
+		pager: true,
+		maxSlides : 3,
+		minSlides : 3,
+		moveSlides : 1,
+		slideHeight : 172
+	});
 });
