@@ -53,6 +53,74 @@
   }
 }
 
+/* ========== 서브레이아웃 ==========*/
+#spot{padding:9rem 0 5rem;color:#fff;position:relative;
+  background: no-repeat 50% 50%/cover;
+  &.sub1{background-image:url("../../images/ipsi/sub_visual01.jpg");}
+  &.sub2{background-image:url("../../images/ipsi/sub_visual02.jpg");}
+  &.sub3{background-image:url("../../images/ipsi/sub_visual03.jpg");}
+  &.sub4{background-image:url("../../images/ipsi/sub_visual04.jpg");}
+  &.sub5{background-image:url("../../images/ipsi/sub_visual05.jpg");}
+  .depth2{
+    >li{display:none;}
+    .depth3{display:none;}
+    >.active {display:block;text-align:center;
+      >a{@include font(300, 2.25rem, "AritaBuri");}
+      .depth3{display:block;position:absolute;left:0;top:100%;width:100%;border-bottom:1px solid #ddd; text-align:center;
+        li{display:inline-block;
+          a{display:inline-block;padding:1rem;margin-bottom:-1px;font-size:.9rem;color:#777;}
+          &.active{
+            a{border-bottom:3px solid #000;color:#555;}
+          }
+          ~li::before{content:"";@include vertical;width:1px;height:14px;background-color:#ddd;}
+        }
+      }
+    }
+    .prev,
+    .next {display:block;position:absolute;top:55%; left:2rem;
+      >a{display:inline-block;line-height:2.5rem;position:relative;opacity:0.6;transition:all .3s;font-size:.9rem;
+        &::before{content:"";float:left;@include circle(2.5rem); border:1px solid #fff;margin-right:2rem;}
+        &::after{content:"";display:block;width:3rem;height:12px;background:url("../../images/kps/snb_arr.png") no-repeat 50% 50%/cover;@include position(20px, 50%);}
+        &:hover{opacity:1;}
+      }
+    }
+    .next {left:inherit;right:2rem;
+      >a{
+        &::before{float:right;margin:0 0 0 2rem;}
+        &::after{transform:translate(0, -50%) rotateY(180deg);left:inherit;right:20px;}
+      }
+    }
+  }
+
+  .cont-top{text-align:center;font-size:.8rem;font-weight: 200;opacity:.6;margin-top:1.8rem;
+    .path{@include vertical;
+      i{margin:0 .5rem;font-size:.7rem;}
+    }
+    .cont-util{@include vertical;margin-left:.5rem;
+      >div>a,
+      .print{display:inline-block;border:1px solid #fff;@include circle(1.65rem);margin:0 .25rem;}
+      .zoom,
+      .sns{display:inline-block;}
+      .sns{position:relative;
+        .sns-shortcut{@include inactive;border:1px solid #fff; border-radius:1.65rem; transition:all .3s; position:absolute; left:5px; top:0; width:0rem; white-space: nowrap; height:100%; z-index:-1; overflow:hidden;padding-left:1.5rem;
+          li{@include vertical;
+            a{display:block;padding:.2rem;}
+          }
+        }
+        &.active{
+          .sns-shortcut{@include active;width:6rem;}
+        }
+      }
+    }
+  }
+}
+.cont-wrap{
+  >h1{ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;}
+  .cont-mid{@include topclear;@include clearfix;
+    padding:3.2rem 0;
+  }
+}
+
 /* 스크롤 다운 */
 .down { margin-top:4rem; text-align:center;color:#fff;
   &::after {display:block; position:relative; font-size:8px; content:'▼'; animation:down 1s infinite alternate;}
