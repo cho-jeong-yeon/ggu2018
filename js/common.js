@@ -11,6 +11,11 @@ $(document).ready(function(){
     $(".total-search").removeClass("active");
   });
     //contents
+
+  	$(".nav .title").click(function(){
+  		$(this).parent().toggleClass('active');
+      return false;
+  	});
     $(".top-btn, .down>a").on('click', function() {
       $('html, body').animate({scrollTop: $(this.hash).offset().top}, 800, function(){});
       return false;
