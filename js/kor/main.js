@@ -55,7 +55,7 @@ $(document).ready(function(){
     $('.bg1, .bg2').toggleClass('active');
   };
 
-  $('.card .item .tabs > li > a').click(function(){
+  $('.card .item .tab-menu > li > a').click(function(){
     $(this).parent().addClass('active').siblings().removeClass('active');
   });
 
