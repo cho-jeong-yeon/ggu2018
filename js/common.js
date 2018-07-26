@@ -29,5 +29,11 @@ $(document).ready(function(){
       return false;
     });
 
+    /* 아코디언 */
+  	$(".accordion>li>a").on("click", function(){
+  		$(this).parent().toggleClass("active").siblings().removeClass("active");
+  		return false;
+  	});
+
 
 });
