@@ -77,6 +77,7 @@
 /*=============== 공통 스타일 ===============*/
 strong.title {display:block;}
 hr {display:block; clear:both;}
+hr.line {width: 100%; height:1px; background:url('../../images/common/bg_hr.png') left top repeat; margin: 3rem 0;}
 
 /* 탭메뉴 */
 .tabs {display:table; table-layout:fixed; width: 100%; margin: 2.5rem auto;}
@@ -104,12 +105,13 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 .border-box.icon img {position: absolute; top: 1.8rem; left:2.8rem;}
 .border-box.icon .title {margin: .75rem 0;}
 .border-box.icon p {margin: .75rem 0;}
-.border-box.icon .btn {margin: .75rem 0;}
+/* .border-box.icon .btn {margin: .75rem 0;} */
 
 /* 버튼 */
 .btn {display: inline-block; margin-bottom: 0; font-family: 'Noto Sans KR'; font-weight: 300; font-size:.75rem; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: bottom; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; color: #666; background-color: #fff; transition: all .25s ease; border: 1px solid #ddd; padding:.5rem 1.1rem; font-family:inherit; min-width:10.3rem;}
 .btn:hover {border-color:#000; color:#000;}
 .btn > i {color:#000; font-size:.8rem; margin-left: 1.5rem; float:right;}
+.btn + .btn {margin-left: 1rem;}
 
 /* 타이틀  */
 .cont-mid h2.title {margin: 2.5rem 0 .7rem; color:#333; font-size:1.15rem;}
@@ -117,23 +119,27 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 .cont-mid strong.mint {color:#2ea89e; font-size:.9rem; margin: 1rem 0 .5rem; display:block;}
 
 /* 블릿 */
-.cont-mid .list > li {position: relative; padding-left: 10px;}
+.list > li {position: relative; padding-left: 10px;}
 /* 민트색 도트 */
-.cont-mid .list.dot > li {color:#333; font-weight: 400; margin: .5rem 0;}
-.cont-mid .list.dot > li::before {content:''; width: .25rem; height: .25rem; border-radius:50%; background:#2ea89e; position:absolute; top:.4rem; left:0;}
-.cont-mid .list.dot > li > * {color:#666; font-weight: 300; margin: .5rem 0;}
+.list.dot > li {color:#333; font-weight: 400; margin: .5rem 0;}
+.list.dot > li::before {content:''; width: .25rem; height: .25rem; border-radius:50%; background:#2ea89e; position:absolute; top:.4rem; left:0;}
+.list.dot > li > * {color:#666; font-weight: 300; margin: .5rem 0;}
 /* 회색 도트 */
-.cont-mid .list.dot.gray > li {font-size:.75rem; font-weight: 300; color:#666; margin: .2rem;}
-.cont-mid .list.dot.gray > li::before {content:''; width: .15rem; height: .15rem; background:#666; top: .35rem;}
+.list.dot.gray > li {font-size:.75rem; font-weight: 300; color:#666; margin: .2rem;}
+.list.dot.gray > li::before {content:''; width: .15rem; height: .15rem; background:#666; top: .35rem;}
+.list.dot.gray > li p {margin: .2em 0;}
 /* 대쉬 */
-.cont-mid .list.dash > li {font-size:.75rem; font-weight: 300; color:#666; margin: .2rem;}
-.cont-mid .list.dash > li::before {content:''; width: 3px; height: 1px; background:#666; position: absolute; top: .4rem; left: 0;}
+.list.dash > li {font-size:.75rem; font-weight: 300; color:#666; margin: .2rem;}
+.list.dash > li::before {content:''; width: 3px; height: 1px; background:#666; position: absolute; top: .4rem; left: 0;}
 
+/* 주의 */
+.caution {color:#d87761; position: relative; padding-left: 1.2rem; margin: 1.5rem 0;}
+.caution > i {position: absolute; top: .1rem; left: .2rem;}
 
 /* 테이블 */
 /* 기본 : 양쪽 오픈 스타일  */
 .table-wrap {overflow:hidden; width: 100%; position: relative; margin: 1.5rem 0;}
-.table-wrap table {table-layout:fixed;}
+/* .table-wrap table {table-layout:fixed;} */
 .table-wrap table::before {content:''; width: 100%; height:1px; background:#000; position: absolute; top:0; left:0;}
 .table-wrap table th {background:#f8f8f8; color:#000; font-weight: 300;}
 .table-wrap table th, .table-wrap table td {border:1px solid #ddd; padding: .9rem 2rem;}
@@ -160,6 +166,21 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 .accordion > li.active .number, .accordion > li.active:hover .number {  border-color: #31d3a6;}
 .accordion > li.active .cont {  opacity: 1;  visibility: visible;  background-color: #fafafa;  max-height: 2000px;  padding: 1rem 3rem;  -webkit-transition: all .3s ease;  transition: all .3s ease;}
 .accordion > li.active .arrow {  -webkit-transform: rotate(180deg); transform: rotate(180deg);}
+
+.gray-box {margin: .5em 0 1rem; width: 100%; border:1px solid #ddd; border-top-color:#000; background:#f8f8f8; padding: 2.3rem 2.8rem;}
+.gray-box img {display:inline-block;}
+.gray-box .name {font-size:1rem; display:inline-block; color:#000; vertical-align:middle;}
+.gray-box img + .name {margin-left: 3rem; margin-right: 4rem;}
+.gray-box .list {display:inline-block; vertical-align:middle;}
+.gray-box .list.dot.gray > li {margin: 0;}
+.gray-box .list strong {display:inline-block; font-weight: 400; color:#000; margin: 0 .5rem 0 0; vertical-align:middle;}
+.gray-box .list p {display:inline-block; vertical-align:middle;}
+.gray-box.separate {padding: 0; height: 11.6rem; background:#fff;}
+.gray-box.separate .top {width: 100%; height: 2.5rem; border-bottom:1px solid #ddd; padding:0 1.5rem 0 2.2rem; background:#f8f8f8;}
+.gray-box.separate .top .name {line-height: 2.4rem;}
+.gray-box.separate .top .more {font-size:.75rem; color:#000; float:right; line-height: 2.4rem;}
+.gray-box.separate .bottom {padding: 1.5rem;}
+.gray-box.separate img + .list {margin-left: 1.7rem; vertical-align: top;}
 
 /*=================================*/
 
