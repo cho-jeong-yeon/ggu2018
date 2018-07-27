@@ -18,9 +18,34 @@
 #popup.close {height: 0; transition-delay:0s;}
 
 
+/* sub0403 */
+.relate-site li{margin-bottom:1.25rem;}
+.relate-site a{display:block;border:1px solid #ccc;}
+.relate-site span{display:block;text-align:center;min-height:4.5rem;padding-top:1rem;}
+.relate-site figcaption{display:block;background-color:#f8f8f8;padding:.5rem;border-top:1px solid #ccc;}
 
 /* sub0601 */
-
+.title-box{padding:.5rem;background:#fff; background-clip:content-box;position:relative; margin-bottom:3rem;}
+.title-box::after{content:"";display:block;width:100%;height:100%;position:absolute;left:0;top:0;background:url("../../images/kor/sub/pattern_border.gif");z-index:-1;}
+.title-box h2{margin:2rem;font-size:1.6rem;color:#000;text-align:center;}
+.title-box [class^="month-"]{position:absolute;top:50%;margin-top:-1rem;color:#000;}
+.title-box [class^="month-"]>*{display:inline-block;vertical-align:middle;}
+.title-box [class^="month-"] i{font-size:1.75rem;}
+.title-box .month-prev{left:2.5rem;}
+.title-box .month-next{right:2.5rem;}
+.calendar{border:1px solid #ddd;}
+.calendar .month-title{text-align:center;padding:1rem 0;}
+.calendar .month-title .num{ display:inline-block; color:#666; font-size:2.25rem; font-weight:600; margin-right:.5rem;}
+.calendar .month-title .eng{display:inline-block;color:#ccc;font-size:1.25rem;font-weight:300;}
+.calendar .month-cont thead{background-color:#4ac7ba;color:#fff;}
+.calendar .month-cont th{padding:.5rem;}
+.calendar .month-cont td{padding:.6rem .5rem;}
+.calendar .month-cont .active{color:#000;display:block;width:1.4rem;height:1.4rem;line-height:1.3rem;font-weight:400;border:1px solid #4ac7ba;border-radius:50%;text-align:center;}
+.calendar-detail{margin-left:3rem;}
+.calendar-detail>strong{display:inline-block;border:1px solid #4ac7ba;border-radius:1.5rem;padding:.3rem 1rem;margin-bottom:1rem;font-weight:500;color:#000;}
+.calendar-detail ul{border-top:1px dotted #ccc;}
+.calendar-detail li{border-bottom:1px dotted #ccc;padding:1rem .5rem;}
+.calendar-detail li .date{color:#000;font-weight:400;font-size:.8rem;margin-right:3.4rem;}
 
 
 
