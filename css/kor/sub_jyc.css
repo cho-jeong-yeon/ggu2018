@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "sub_jyc.css";
+
 #contents {font-family: 'Noto Sans KR'; font-weight: 300; font-size:.8rem; color:#666;}
 #wrap {position: relative;}
 
@@ -18,7 +18,10 @@
 #popup.close {height: 0; transition-delay:0s;}
 
 
-/* sub0101 */
+
+/* sub0601 */
+.accordion > li .title-wrap .title{margin-bottom:0;}
+
 
 
 
