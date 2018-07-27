@@ -19,10 +19,10 @@
 
 
 /* sub0403 */
-.relate-site li{margin-bottom:1.25rem;}
-.relate-site a{display:block;border:1px solid #ccc;}
-.relate-site span{display:block;text-align:center;min-height:4.5rem;padding-top:1rem;}
-.relate-site figcaption{display:block;background-color:#f8f8f8;padding:.5rem;border-top:1px solid #ccc;}
+.site-list li{margin-bottom:1.25rem;}
+.site-list a{display:block;border:1px solid #ccc;}
+.site-list span{display:block;text-align:center;min-height:4.5rem;padding-top:1rem;}
+.site-list figcaption{display:block;background-color:#f8f8f8;padding:.5rem;border-top:1px solid #ccc;}
 
 /* sub0601 */
 .title-box{padding:.5rem;background:#fff; background-clip:content-box;position:relative; margin-bottom:3rem;}
