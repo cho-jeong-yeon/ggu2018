@@ -17,12 +17,62 @@
 #popup .close {position:absolute; top: 2.5rem; right:0; display:block; width: 30px; height: 30px; font-size:1.5rem; color:#333; z-index: 2;}
 #popup.close {height: 0; transition-delay:0s;}
 
+/* 공통 */
+.mint {color:#3bceae;}
 
-/* sub0101 */
+/* 이사장인사말 */
+.greeting {}
+.greeting > img:first-of-type {float: right;}
+.greeting .title {font-size:1.9rem; margin-bottom: 2.8rem;}
+.greeting .title em {font-weight:600;}
+.greeting .txt p {margin: 1.5rem 0; font-size:.75rem; line-height: 1.8;}
+.greeting .name {margin-top: 2.5rem; padding-top: 1.2rem; position: relative;}
+.greeting .name::before {content:''; width: 2.3rem; height: 1px; background:#333; position:absolute; top:0; left:0;}
+.greeting .name span {font-size:.9rem; margin-bottom: .5rem; display: block;}
+.greeting .name strong {font-size:1.5rem; font-weight: 600; display:block;}
 
 
+/* 학교법인금강대학교 */
+.sub010102 {}
+.sub010102 img {float: left; width: 40%;}
+.sub010102 .txt {float: right; width: 55%;}
+.sub010102 .title:first-of-type {background:url('../../images/kor/sub/bg_ggu1.png') left top no-repeat; display: block; padding-top: 1.6em;}
+.sub010102 .txt p {margin: 1.5rem 0;}
 
 
+/* 기구표 및 임직원소개 */
+.sub010103 {}
+.sub010103 .gray-border-box {border:1px solid #dedede; background:#f8f8f8; padding: 3.5rem 1.5rem; margin-bottom: 3rem;}
+.sub010103 .gray-border-box img {margin: 0 auto; display: block;}
+
+
+/* 총장인사말 */
+.sub010201 {}
+.sub010201 .row > li {margin-bottom: 2.5rem;}
+.sub010201 .row > li:nth-child(3) {background:url('../../images/kor/sub/bg_010201.jpg')left top /contain no-repeat; min-height:20rem;}
+.sub010201 h2.title {display:block; float: right; font-size:1.5rem; padding-top: 1.5rem;}
+
+
+/* 주요약력 */
+.sub010202 {}
+.sub010202 .intro {margin: 0 0 3rem;}
+.sub010202 .intro > li {padding: 0;}
+.sub010202 .intro > li:first-child {position: relative;}
+.sub010202 .intro > li:first-child .name {position:absolute; bottom:0; right:-6rem; padding: 1.5rem 1.8rem; color:#fff; z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4fc5be), to(#30d3a6));
+  background: linear-gradient(to bottom, #4fc5be 0%, #30d3a6 100%);}
+.sub010202 .intro > li:first-child .name span {font-size:.9rem; display:block; margin-bottom: .5rem; margin-right: 1rem;}
+.sub010202 .intro > li:first-child .name strong {font-size:1.5rem; font-weight: 500;}
+.sub010202 .intro .gray {background:#f1f1ef url('../../images/kor/sub/bg_010202.png') right bottom no-repeat; padding: 3.5rem 3rem 1.5rem 8.5rem; min-height:17.5rem;}
+.sub010202 .intro .gray p {margin: .4rem 0;}
+.sub010202 .career {position:relative; margin-top: 2.3rem;}
+.sub010202 .career::before {content:''; width: 100%; height: 1px; background:#e9e9eb; position:absolute; top:0; left: 0;}
+.sub010202 .career > li .year {font-family:serif; font-size:2rem; display:inline-block; font-style:italic; letter-spacing:-2px; font-weight: 600; position:relative; padding-top: 1.5rem;}
+.sub010202 .career > li .year::before {content:''; width: 1.3rem; height: 1.3rem; background:#fff; border:1px solid #e9e9eb; border-radius:50%; z-index: 1; position:absolute; top:-.65rem; left: 50%; margin-left: -.65rem;}
+.sub010202 .career > li .year::after {content:''; width: .45rem; height: .45rem; background:#4fc5be; border-radius:50%; top: -.2rem; left: 50%; margin-left: -.2rem; z-index: 2; position: absolute;}
+.sub010202 .career > li > .list {margin-top: 2rem;}
+.sub010202 .career > li > .list span {display:inline-block; vertical-align: middle; margin-right: 2.5rem;}
+.sub010202 .career > li > .list p {display: inline-block; vertical-align: middle;}
 
 
 @media (max-width:1200px) {
