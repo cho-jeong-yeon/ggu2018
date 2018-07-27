@@ -332,21 +332,6 @@
 			<li><a href="">일반인</a></li>
 		</ul>
 
-		<script type="text/javascript">
-			$('#quick .menu').find('a').on('mouseenter focusin', function()
-			{
-				$(this).parent('li').siblings('li').removeClass('active');
-				$(this).parent('li').addClass('active');
-			});
-
-			$('#quick .menu').find('a').on('click', function()
-			{
-				$(this).parents('#quick').addClass('active');
-
-				return false;
-			});
-		</script>
-
 		<article class="group">
 			<div class="item">
 				<h2><img src="../../images/kor/main/logo.gif" alt=""></h2>
@@ -378,14 +363,6 @@
 					</li>
 				</ul>
 
-				<script type="text/javascript">
-					$('#quick .banner').find('a').on('mouseenter focusin', function()
-					{
-						$(this).parent('li').siblings('li').removeClass('active');
-						$(this).parent('li').addClass('active');
-					});
-				</script>
-
 				<ul class="link">
 					<li>
 						<h3>입학정보</h3>
@@ -413,25 +390,7 @@
 						<a href=""><span>학부안내</span></a>
 					</li>
 				</ul>
-
-				<script type="text/javascript">
-					$('#quick .link').find('a').on('mouseenter focusin', function()
-					{
-						$(this).siblings('a').removeClass('active');
-						$(this).addClass('active');
-					});
-				</script>
-
 				<a href="" class="close"></a>
-
-				<script type="text/javascript">
-					$('#quick .group').find('.close').on('click', function()
-					{
-						$(this).parents('#quick').removeClass('active');
-
-						return false;
-					});
-				</script>
 			</div>
 		</article>
 	</div>

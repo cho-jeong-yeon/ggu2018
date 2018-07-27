@@ -146,95 +146,20 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 .table-wrap.all-open table th, .table-wrap.all-open table td {border-left:0; border-right:0;}
 
 /* 아코디언 */
-.accordion {
-  border-top: 1px solid #000;
-}
-.accordion > li .title-wrap {
-  display: block;
-  border-bottom: 1px solid #ddd;
-  position: relative;
-  padding: 1.2rem 3rem 1.3rem 12rem;
-}
-.accordion > li .title-wrap .number {
-  border: 1px solid #ddd;
-  color: #344480;
-  text-align: center;
-  padding: .4rem 0;
-  width: 10rem;
-  font-size: .8rem;
-  display: inline-block;
-  border-radius: 2.5rem;
-  -webkit-transition: all .25s ease;
-  transition: all .25s ease;
-  position: absolute;
-  left: 0;
-  top: 1rem;
-}
-.accordion > li .title-wrap:hover .number {
-  background-color: #ddd;
-}
-.accordion > li .title-wrap .title {
-  font-size: 1rem;
-}
-.accordion > li .title-wrap .arrow {
-  position: absolute;
-  top: .8rem;
-  right: 1rem;
-  font-size: 1.5rem;
-  border: 1px solid #dedede;
-  border-radius: 50%;
-  padding: .3rem;
-  -webkit-transition: all .25s ease;
-  transition: all .25s ease;
-}
-.accordion > li .cont {
-  opacity: 0;
-  visibility: hidden;
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 2rem;
-  border-bottom: 1px solid #ddd;
-}
-.accordion > li .cont .title {
-  display: block;
-  margin: 0 0 .6rem;
-  position: relative;
-  padding-left: .5rem;
-}
-.accordion > li .cont .title::before {
-  content: "";
-  display: block;
-  width: 2px;
-  height: .7rem;
-  background-color: #000;
-  position: absolute;
-  left: 0;
-  top: 4px;
-}
-.accordion > li .cont .list-dot > li {
-  font-size: .8rem;
-}
-.accordion > li .cont .list-dot > li::before {
-  top: .5rem;
-}
-.accordion > li.active .number, .accordion > li.active:hover .number {
-  background-color: #344480;
-  border-color: #344480;
-  color: #fff;
-}
-.accordion > li.active .cont {
-  opacity: 1;
-  visibility: visible;
-  background-color: #fafafa;
-  max-height: 2000px;
-  padding: 2rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-.accordion > li.active .arrow {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
+.accordion {  border-top: 1px solid #000;}
+.accordion > li .title-wrap {  display: block;  border-bottom: 1px solid #ddd;  position: relative;  padding: 1.2rem 3rem 1.3rem 8rem;}
+.accordion > li .title-wrap .number {  border: 1px solid #ddd;  color: #000;  text-align: center;  padding: .4rem 0;  width:5rem;  font-size: .8rem; display: inline-block;  border-radius: 2.5rem;  -webkit-transition: all .25s ease;  transition: all .25s ease;  position: absolute;  left: 0;  top: 1rem;}
+.accordion > li .title-wrap:hover .number {  background-color: #eee;}
+.accordion > li .title-wrap .title {  font-size: 1rem;margin-bottom:0;}
+.accordion > li .title-wrap .arrow {  position: absolute;  top: .8rem;  right: 1rem;  font-size: 1.5rem;  border-radius: 50%;  padding: .3rem;  -webkit-transition: all .25s ease;  transition: all .25s ease;}
+.accordion > li .cont {  opacity: 0;  visibility: hidden;  max-height: 0;  overflow: hidden;  padding:0rem 3rem;  border-bottom: 1px solid #ddd;}
+.accordion > li .cont .title {  display: block;  margin: 0 0 .6rem;  position: relative;  padding-left: .5rem;}
+.accordion > li .cont .title::before {  content: "";  display: block;  width: 2px;  height: .7rem;  background-color: #000;  position: absolute;  left: 0;  top: 4px;}
+.accordion > li .cont .list-dot > li {  font-size: .8rem;}
+.accordion > li .cont .list-dot > li::before {  top: .5rem;}
+.accordion > li.active .number, .accordion > li.active:hover .number {  border-color: #31d3a6;}
+.accordion > li.active .cont {  opacity: 1;  visibility: visible;  background-color: #fafafa;  max-height: 2000px;  padding: 1rem 3rem;  -webkit-transition: all .3s ease;  transition: all .3s ease;}
+.accordion > li.active .arrow {  -webkit-transform: rotate(180deg); transform: rotate(180deg);}
 
 /*=================================*/
 
