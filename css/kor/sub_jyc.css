@@ -1,9 +1,24 @@
 @charset "UTF-8";
 
+.point2{color:#d87761;}
+strong.title{margin-top:1rem;}
+.cont-mid .inline-block{margin-bottom:1rem;}
+.cont-mid .inline-block strong.mint {display:inline-block;margin:0 1rem 0 0;}
+.cont-mid .inline-block > li~li{margin-top:1rem;}
+
 #contents {font-family: 'Noto Sans KR'; font-weight: 300; font-size:.8rem; color:#666;}
 #wrap {position: relative;}
 
-
+.flow-arr > li{float:left;position:relative;margin:1rem 0;}
+.flow-arr > li::before{content:"";display:block;width:1.5rem;height:2rem;background:url("../../images//kor/sub/img_arr.png") no-repeat 0 0;position:absolute;left:0;top:50%;transform:translate(-50%, -50%);}
+.flow-arr > li:first-child::before{display:none;}
+.flow-arr > li .box{border:1px solid #ddd;padding:1rem 0;display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center;
+display: -ms-flexbox; align-items: center; -ms-flex-pack: center; min-height:4.2rem;}
+[class*="box"] p:first-of-type,
+[class*="box"] ul{margin-top:0;}
+.circle-num>li{line-height:1.6;}
+.ol-num{padding-left:1.4rem;}
+.ol-num>li{list-style:decimal;line-height:1.6;}
 
 
 /* 팝업존 */
@@ -17,6 +32,10 @@
 #popup .close {position:absolute; top: 2.5rem; right:0; display:block; width: 30px; height: 30px; font-size:1.5rem; color:#333; z-index: 2;}
 #popup.close {height: 0; transition-delay:0s;}
 
+/* sub0402 */
+.card-list li img{float:left;margin-right:1rem;}
+.card-list .card-item{border:1px solid #ddd;background-color:#f8f8f8;padding:.7rem;margin-bottom:.9rem;}
+.card-list .card-item::after{content:"";clear:both;display:block;}
 
 /* sub0403 */
 .site-list li{margin-bottom:1.25rem;}
@@ -40,7 +59,7 @@
 .calendar .month-cont thead{background-color:#4ac7ba;color:#fff;}
 .calendar .month-cont th{padding:.5rem;}
 .calendar .month-cont td{padding:.6rem .5rem;}
-.calendar .month-cont .active{color:#000;display:block;width:1.4rem;height:1.4rem;line-height:1.3rem;font-weight:400;border:1px solid #4ac7ba;border-radius:50%;text-align:center;}
+.calendar .month-cont .active{color:#000;display:inline-block;width:1.4rem;height:1.4rem;line-height:1.3rem;font-weight:400;border:1px solid #4ac7ba;border-radius:50%;text-align:center;}
 .calendar-detail{margin-left:3rem;}
 .calendar-detail>strong{display:inline-block;border:1px solid #4ac7ba;border-radius:1.5rem;padding:.3rem 1rem;margin-bottom:1rem;font-weight:500;color:#000;}
 .calendar-detail ul{border-top:1px dotted #ccc;}
@@ -62,5 +81,6 @@
 @media (max-width: 992px)  {
   /* grid md */
   .line-box > div:first-of-type, .line-box > div:last-of-type {padding: 0;}
+  .calendar-detail{margin:2rem 0 0 0;}
 
 }
