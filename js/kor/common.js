@@ -38,6 +38,14 @@ $(document).ready(function(){
 		$(this).addClass('active').siblings().removeClass('active');
 	});
 
+
+  $('.service').find('a').on('mouseenter focusin', function()
+  {
+    $(this).parent('li').siblings('li').removeClass('active');
+    $(this).parent('li').addClass('active');
+  });
+
+
 /* 퀵메뉴 */
 	$('#quick .menu').find('a').on('mouseenter focusin', function()
 	{
