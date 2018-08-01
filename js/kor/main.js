@@ -105,11 +105,6 @@ $(document).ready(function(){
     controls		: true
   });
 
-  $('.service').find('a').on('mouseenter focusin', function()
-  {
-    $(this).parent('li').siblings('li').removeClass('active');
-    $(this).parent('li').addClass('active');
-  });
 
 
 

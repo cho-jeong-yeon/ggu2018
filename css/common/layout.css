@@ -76,9 +76,9 @@
 
 
 /*=============== 공통 스타일 ===============*/
-strong.title {display:block;}
-hr {display:block; clear:both;}
-hr.line {width: 100%; height:1px; background:url('../../images/common/bg_hr.png') left top repeat; margin: 3rem 0;}
+.cont-mid strong.title {display:block;}
+.cont-mid hr {display:block; clear:both;}
+.cont-mid hr.line {width: 100%; height:1px; background:url('../../images/common/bg_hr.png') left top repeat; margin: 3rem 0;}
 .cont-mid p {margin: .7rem 0;}
 
 /* 탭메뉴 */
@@ -110,10 +110,10 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 /* .border-box.icon .btn {margin: .75rem 0;} */
 
 /* 버튼 */
-.btn {display: inline-block; margin-bottom: 0; font-family: 'Noto Sans KR'; font-weight: 300; font-size:.75rem; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: bottom; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; color: #666; background-color: #fff; transition: all .25s ease; border: 1px solid #ddd; padding:.5rem 1.1rem; font-family:inherit; min-width:10.3rem;}
-.btn:hover {border-color:#000; color:#000;}
-.btn > i {color:#000; font-size:.8rem; margin-left: 1.5rem; float:right;}
-.btn + .btn {margin-left: 1rem;}
+.cont-mid .btn {display: inline-block; margin-bottom: 0; font-family: 'Noto Sans KR'; font-weight: 300; font-size:.75rem; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: bottom; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; color: #666; background-color: #fff; transition: all .25s ease; border: 1px solid #ddd; padding:.5rem 1.1rem; font-family:inherit; min-width:10.3rem;}
+.cont-mid .btn:hover {border-color:#000; color:#000;}
+.cont-mid .btn > i {color:#000; font-size:.8rem; margin-left: 1.5rem; float:right;}
+.cont-mid .btn + .btn {margin-left: 1rem;}
 
 /* 타이틀  */
 .cont-mid h2.title {margin: 2.5rem 0 .7rem; color:#333; font-size:1.15rem;}
@@ -121,19 +121,19 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 .cont-mid strong.mint {color:#2ea89e; font-size:.9rem; margin: 1rem 0 .5rem; display:block;}
 
 /* 블릿 */
-.list {margin: .7rem 0;}
-.list > li {position: relative; padding-left: 10px;}
+.cont-mid .list {margin: .7rem 0;}
+.cont-mid .list > li {position: relative; padding-left: 10px;}
 /* 민트색 도트 */
-.list.dot > li {color:#333; font-weight: 400; margin: .5rem 0;}
-.list.dot > li::before {content:''; width: .25rem; height: .25rem; border-radius:50%; background:#2ea89e; position:absolute; top:.4rem; left:0;}
-.list.dot > li > * {color:#666; font-weight: 300;}
+.cont-mid .list.dot > li {color:#333; font-weight: 400; margin: .5rem 0;}
+.cont-mid .list.dot > li::before {content:''; width: .25rem; height: .25rem; border-radius:50%; background:#2ea89e; position:absolute; top:.4rem; left:0;}
+.cont-mid .list.dot > li > * {color:#666; font-weight: 300;}
 /* 회색 도트 */
-.list.dot.gray > li {font-size:.75rem; font-weight: 300; color:#666; margin: .2rem;}
-.list.dot.gray > li::before {content:''; width: .15rem; height: .15rem; background:#666; top: .35rem;}
-.list.dot.gray > li p {margin: .2em 0;}
+.cont-mid .list.dot.gray > li {font-size:.75rem; font-weight: 300; color:#666; margin: .2rem;}
+.cont-mid .list.dot.gray > li::before {content:''; width: .15rem; height: .15rem; background:#666; top: .35rem;}
+.cont-mid .list.dot.gray > li p {margin: .2em 0;}
 /* 대쉬 */
-.list.dash > li {font-size:.75rem; font-weight: 300; color:#666; margin: .2rem;}
-.list.dash > li::before {content:''; width: 3px; height: 1px; background:#666; position: absolute; top: .4rem; left: 0;}
+.cont-mid .list.dash > li {font-size:.75rem; font-weight: 300; color:#666; margin: .2rem;}
+.cont-mid .list.dash > li::before {content:''; width: 3px; height: 1px; background:#666; position: absolute; top: .4rem; left: 0;}
 
 /* 주의 */
 .caution {color:#d87761; position: relative; padding-left: 1.2rem; margin: 1.5rem 0;}
@@ -141,18 +141,18 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 
 /* 테이블 */
 /* 기본 : 양쪽 오픈 스타일  */
-.table-wrap {overflow:hidden; width: 100%; position: relative; margin: 1.5rem 0;}
+.cont-mid .table-wrap {overflow:hidden; width: 100%; position: relative; margin: 1.5rem 0;}
 /* .table-wrap table {table-layout:fixed;} */
-.table-wrap table::before {content:''; width: 100%; height:1px; background:#000; position: absolute; top:0; left:0;}
-.table-wrap table th {background:#f8f8f8; color:#000; font-weight: 300;}
-.table-wrap table th, .table-wrap table td {border:1px solid #ddd; padding: .9rem 2rem;}
-.table-wrap table tr:first-child th, .table-wrap table tr:first-child td{border-top:0;}
-.table-wrap table th:first-child, .table-wrap table td:first-child {border-left: 0;}
-.table-wrap table th:last-child, .table-wrap table td:last-child {border-right: 0;}
+.cont-mid .table-wrap table::before {content:''; width: 100%; height:1px; background:#000; position: absolute; top:0; left:0;}
+.cont-mid .table-wrap table th {background:#f8f8f8; color:#000; font-weight: 300;}
+.cont-mid .table-wrap table th, .table-wrap table td {border:1px solid #ddd; padding: .9rem 2rem;}
+.cont-mid .table-wrap table tr:first-child th, .table-wrap table tr:first-child td{border-top:0;}
+.cont-mid .table-wrap table th:first-child, .table-wrap table td:first-child {border-left: 0;}
+.cont-mid .table-wrap table th:last-child, .table-wrap table td:last-child {border-right: 0;}
 
 /* 모두오픈 스타일  */
-.table-wrap.all-open {}
-.table-wrap.all-open table th, .table-wrap.all-open table td {border-left:0; border-right:0;}
+.cont-mid .table-wrap.all-open {}
+.cont-mid .table-wrap.all-open table th, .table-wrap.all-open table td {border-left:0; border-right:0;}
 
 /* 아코디언 */
 .accordion {  border-top: 1px solid #000;}
@@ -170,6 +170,7 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 .accordion > li.active .cont {  opacity: 1;  visibility: visible;  background-color: #fafafa;  max-height: 2000px;  padding: 1rem 3rem;  -webkit-transition: all .3s ease;  transition: all .3s ease;}
 .accordion > li.active .arrow {  -webkit-transform: rotate(180deg); transform: rotate(180deg);}
 
+/* 회색박스 */
 .gray-box {margin: .5em 0 1rem; width: 100%; border:1px solid #ddd; border-top-color:#000; background:#f8f8f8; padding: 2.3rem 2.8rem;}
 .gray-box img {display:inline-block;}
 .gray-box .name {font-size:1rem; display:inline-block; color:#000; vertical-align:middle;}
@@ -180,10 +181,15 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 .gray-box .list p {display:inline-block; vertical-align:middle;}
 .gray-box.separate {padding: 0; height: 11.6rem; background:#fff;}
 .gray-box.separate .top {width: 100%; height: 2.5rem; border-bottom:1px solid #ddd; padding:0 1.5rem 0 2.2rem; background:#f8f8f8;}
-.gray-box.separate .top .name {line-height: 2.4rem;}
 .gray-box.separate .top .more {font-size:.75rem; color:#000; float:right; line-height: 2.4rem;}
 .gray-box.separate .bottom {padding: 1.5rem;}
 .gray-box.separate img + .list {margin-left: 1.7rem; vertical-align: top;}
+/* 선이 살짝 있는 회색박스 */
+.gray-border-box {border:1px solid #dedede; background:#f8f8f8; padding: 1rem; margin: 2rem 0;}
+/* 선이 없는 회색박스 */
+.gray-bg-box {background:#fafafa; padding: 1rem; margin: 2rem 0;}
+/* 얇은 선만 있는 박스 */
+.border-thin-box {border:1px solid #ddd; padding: 1rem; margin: 2rem 0;}
 
 /*=================================*/
 
