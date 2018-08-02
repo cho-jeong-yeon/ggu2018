@@ -36,6 +36,7 @@ display: -ms-flexbox; align-items: center; -ms-flex-pack: center; min-height:4.2
 .card-list li img{float:left;margin-right:1rem;}
 .card-list .card-item{border:1px solid #ddd;background-color:#f8f8f8;padding:.7rem;margin-bottom:.9rem;}
 .card-list .card-item::after{content:"";clear:both;display:block;}
+.paragraph02 dt.title{font-size:1rem;margin:1.2rem 0 .7rem;}
 
 /* sub0403 */
 .site-list li{margin-bottom:1.25rem;}
