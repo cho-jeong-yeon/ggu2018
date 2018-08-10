@@ -39,7 +39,6 @@ $(document).ready(function(){
 
 $(window).on("load scroll", function(){
 	var el = $("#footer");
-  console.log(el.offset().top, $(window).scrollTop());
   if(el.offset().top - 1200 <= $(window).scrollTop()){
     $(".go-top").addClass("stick");
   }else{

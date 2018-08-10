@@ -20,6 +20,9 @@ display: -ms-flexbox; align-items: center; -ms-flex-pack: center; min-height:4.2
 .ol-num{padding-left:1.4rem;}
 .ol-num>li{list-style:decimal;line-height:1.6;}
 
+/* 콘텐츠 안에 탭 */
+.tab-con{display:none;}
+#tab1{display:block;}
 
 /* 팝업존 */
 #popup {overflow:hidden; height:150px; text-align:center; background:#fdd000; transition:all .2s; -webkit-transition:all .2s;}
@@ -43,6 +46,12 @@ display: -ms-flexbox; align-items: center; -ms-flex-pack: center; min-height:4.2
 .site-list a{display:block;border:1px solid #ccc;}
 .site-list span{display:block;text-align:center;min-height:4.5rem;padding-top:1rem;}
 .site-list figcaption{display:block;background-color:#f8f8f8;padding:.5rem;border-top:1px solid #ccc;}
+
+/* sub0404 */
+.star-table-layer{background-color:#fff;opacity:0;visibility:hidden;-webkit-transition:all .5s ease;transition:all .5s ease;position:absolute;left:50%;top:50%;min-width:700px;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);border:1px solid #ddd;padding:1rem;box-shadow:0 0 2rem rgba(0,0,0,.2);}
+.star-table-layer .close-btn{position:absolute;right:1rem;top:1rem;}
+.star-table-layer .close-btn i{font-size:2rem;}
+.star-table-layer.active{opacity:1;visibility:visible;}
 
 /* sub0601 */
 .title-box{padding:.5rem;background:#fff; background-clip:content-box;position:relative; margin-bottom:3rem;}

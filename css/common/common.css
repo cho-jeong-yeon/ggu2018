@@ -244,7 +244,7 @@ td.ellipsis { padding-left: 20px; }
 
 .float-wrap { overflow: hidden; }
 
-.indent { padding-left: .5rem; }
+.indent { padding-left: 1.1rem; }
 
 .indent .indent { padding-left: 22px; }
 
