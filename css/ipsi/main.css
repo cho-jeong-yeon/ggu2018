@@ -148,5 +148,3 @@ background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1)
 .site-banner{background-color:#fff; .slide-list{padding:30px 0 30px 180px;position:relative;} li{width:auto!important;} .bx-controls{position:absolute;left:0;top:50%;transform:translateY(-50%); .bx-controls-direction, .bx-controls-auto{float:left;} a{display:block;float:left;width:45px;height:45px;border:1px solid #ddd;color:transparent;text-align:center;margin-left:-1px; &::before{font-family:"xeicon";display:inline-block;font-size:.9rem;color:#767676;line-height:2.15rem;} } .bx-prev::before{content: "\e93b";} .bx-next::before{content: "\e93e";} .bx-stop::before{content: "\e960";transform:rotate(90deg);} .bx-start::before{content: "\ea3e";} }
 }
 */
-
-/*# sourceMappingURL=main.css.map */
