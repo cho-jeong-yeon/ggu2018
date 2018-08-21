@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+
+#contents {font-family: 'Noto Sans KR'; font-weight: 300; font-size:.8rem; color:#666;}
+#wrap {position: relative;}
+.mint {color:#2ea89e;}
+strong.black {color:#000; font-size:.85rem; display: block; margin: 1.5rem 0 .6rem; font-weight: 600;}
+
+.form-control {height: 1.9rem; display: inline-block;}
+.form-control.xxs {width: 5.5rem;}
+.form-control.xs {width: 8.1rem;}
+.form-control.sm {width: 15rem;}
+.form-control.md {width: 50%;}
+.form-control.lg {width: 70%;}
+
+.cont-mid .table-wrap td.border-n {border: 0;}
+.cont-mid .table-wrap label {min-width:5.5rem; display: inline-block; padding-left: .5rem;}
+.cont-mid .table-wrap .list {text-align:left;}
+.cont-mid .table-wrap hr {margin: .5rem 0;}
+.cont-mid .table-wrap hr.line {margin: .5rem 0;}
+
+.cont-mid .btn {vertical-align:middle;}
+.cont-mid .btn > i {float: left; margin-left: 0; margin-right: .3rem; line-height:1.4;}
+.btn.black {background:#000; color:#fff; border:1px solid #000;}
+.btn.black:hover {background:#fff; color:#000;}
+.btn.mint {border:1px solid #2ea89e; color:#2ea89e;}
+.btn.mint:hover {background:#2ea89e; color:#fff; border-color:#2ea89e;}
+.btn.mint > i { color:#2ea89e; line-height:1.3;}
+.btn.mint:hover > i {color:#fff;}
+.btn.gradient {border-color:#4dc6bd; color:#fff; min-width:auto; background: -webkit-gradient(linear, left, right, from(#30d3a6), to(#4fc5be)); background: linear-gradient(to left, #30d3a6 0%, #4fc5be 100%); }
+.btn.gradient:hover {border-color:#4dc6bd;}
+.btn.gradient > i {color:#fff;}
+.btn.gradient:hover > i {color:#000;}
+
+.caution {position: relative; padding-left: 1.2rem; margin: .3rem; color:#666;}
+.caution i {color:#2ea89e;}
+
+.control {position: relative; cursor:pointer; display: inline-block;}
+.control input[type="radio"], .control input[type="checkbox"] {opacity:0; }
+.cont-mid .table-wrap .control label {padding-left: .5rem;  cursor:pointer;}
+.control.radio label::before, .control.radio label::after {content:''; position:absolute; top:0; left:0;}
+.control.radio label::before {width: 1rem; height: 1rem; background:#fff; border:1px solid #ddd; border-radius:50%; transition:all .3s ease; -webkit-transition:all .3s ease;}
+.control.radio input[type="radio"]:checked + label::after {top: .25rem; left: .25rem; width: .5rem; height: .5rem; border-radius:50%; background:#49c8ba; z-index: 2;}
+input + .control {margin-left: 2rem;}
+
+.cont-mid hr.line {margin: 2rem 0;}
+
+
+
+/* 입학자료 우편발송신청 */
+.send-mail {}
+.send-mail .postcode {margin-left: 1rem; height: 1.9rem; border:1px solid #2ea89e; color:#2ea89e; padding: .3rem 1rem; vertical-align:middle; transition:all .3s ease; -webkit-transition:all .3s ease;}
+.send-mail .postcode i {margin-right: .5rem;}
+.send-mail .postcode:hover {background:#2ea89e; color:#fff;}
+
+
+/* 전형일정안내 */
+.btn.sm {height: 1.5rem; padding:.2rem .7rem; min-width:auto; margin-left: .5rem;}
+.schedule-info {}
+.schedule-info ol > li {margin-bottom: .5rem;}
+
+/* 입학자료 우편발송신청 */
+.sub0307 {}
+.sub0307 img {float: right; width: 40%;}
+.sub0307 .txt {width: 60%;}
+.sub0307 em.bold {font-weight: 500;}
+
+/* 원서접수조회 */
+.sub0308 {}
+.sub0308 .row {margin-bottom: 4.2rem;}
+.sub0308 .img {position: relative;}
+.sub0308 .img::before {content:''; width: 7.9rem; height: .2rem; background:#000; position:absolute; top:2.5rem; right:-3rem;}
+.sub0308 .txt {padding-top: 4.7rem; padding-left: 1.5rem;}
+
+
+/* 합격자조회 */
+.sub0309 {}
+.sub0309 .img {position: relative;}
+.sub0309 .img::before {content:''; width: 7.9rem; height: .2rem; background:#000; position:absolute; top:2.5rem; right:-3rem;}
+.sub0309 .txt {padding-top: 4.7rem; padding-left: 1.5rem;}
+.sub0309 .txt strong {display: block; font-size:1.6rem; color:#333; margin-bottom: 1.5rem;}
+.sub0309 .txt strong em {font-weight: 600; }
+.sub0309 .txt .btn {width: 100%; height: 4rem; font-size:1.1rem; font-weight: 500; padding: 1.1rem; margin-bottom: 1rem;}
+
+
+/* 경쟁률조회 */
+.sub0310 {}
+.sub0310 .img {position: relative;}
+.sub0310 .img::before {content:''; width: 7.9rem; height: .2rem; background:#000; position:absolute; top:2.5rem; right:-3rem;}
+.sub0310 .txt {padding-top: 4.7rem; padding-left: 1.5rem;}
+.sub0310 .txt strong {display: block; font-size:1.6rem; color:#333; margin-bottom: 1.5rem;}
+.sub0310 .txt strong em {font-weight: 600; }
+.sub0310 .txt .btn {width: 100%; height: 4rem; font-size:1.1rem; font-weight: 500; padding: 1.1rem; margin-bottom: 1rem;}
+
+/* 내신성적 산출 */
+.schedule-info2 {}
+.schedule-info2 .btn.mint {min-width:auto;}
