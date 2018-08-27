@@ -38,10 +38,17 @@ $(document).ready(function(){
 });
 
 $(window).on("load scroll", function(){
-	var el = $("#footer");
-  if(el.offset().top - 1200 <= $(window).scrollTop()){
+
+	var fixItem = $(".cont-top");
+  var baseline = $(".cont-wrap");
+  if(fixItem.offset().top <= $(window).scrollTop()){  fixItem.addClass("fixed");  }
+  if(baseline.offset().top > $(window).scrollTop()){  fixItem.removeClass("fixed");  }
+
+  var el2 = $("#footer");
+  if(el2.offset().top - 1200 <= $(window).scrollTop()){
     $(".go-top").addClass("stick");
   }else{
     $(".go-top").removeClass("stick");
   }
+
 });
