@@ -37,7 +37,12 @@ $(document).ready(function(){
 	$('#gnb .depth2 > li').on('mouseenter focusin', function(){
 		$(this).addClass('active').siblings().removeClass('active');
 	});
-
+	$('.all-menu').on('click', function(){
+		$('#header').addClass('all-menu-open');
+	});
+	$('.all-menu-close').on('click', function(){
+		$('#header').removeClass('all-menu-open');
+	});
 
   $('.service').find('a').on('mouseenter focusin', function()
   {

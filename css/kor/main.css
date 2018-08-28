@@ -27,8 +27,8 @@
 #visual > .desc span {opacity:0; transform: scale(0.2); -webkit-transform: scale(0.2);}
 #visual > .desc .title + p {opacity:0;}
 #visual > .desc .title + p em{color:#fdd000;}
-#visual > .desc .title {margin-bottom:1.5rem; font-family:'Gotham'; font-size:4.0rem; text-shadow:4px 4px 5px rgba(0, 0, 0, .1); text-transform:uppercase; letter-spacing:-12px; line-height:1; font-weight: 700;}
-#visual > .desc .title strong {display:block; font-size:4.5rem; letter-spacing:-.5rem; font-weight: 700;}
+#visual > .desc .title {margin-bottom:1.5rem; font-family:'Gotham'; font-size:4.0rem; text-shadow:4px 4px 5px rgba(0, 0, 0, .1); text-transform:uppercase; letter-spacing:-14px; line-height:1; font-weight: 700;}
+#visual > .desc .title strong {display:block; font-size:4.5rem; letter-spacing:-.7rem; font-weight: 700;}
 #visual > .desc .title em {color:#fdd000;}
 #visual .bg {position:absolute; left:0; top:0; z-index:-1; width:100%; height:100%; opacity:0;}
 #visual .bg img {min-width:100%; min-height:100%;}
