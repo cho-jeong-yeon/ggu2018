@@ -32,13 +32,13 @@
   100% { top: 30%; -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 #visual .guidline { margin-top: 2rem; }
 #visual .guidline::after { content: ""; display: block; clear: both; }
-#visual .guidline .card { display: block; float: left; width: 25%; height: 13.1rem; padding: 1.5rem 0; text-align: center; }
+#visual .guidline .card { float: left; width: 25%; height: 13.1rem; padding: 1.5rem 0;display: -webkit-flex;display: flex;-webkit-align-items:center;align-items:center;justify-content: center;text-align:center;}
 #visual .guidline .card:nth-child(1) { background: #37c8cb url("../../images/ipsi/card1_bg.png") 0 100% no-repeat; }
 #visual .guidline .card:nth-child(2) { background: rgba(255, 255, 255, 0.7) url("../../images/ipsi/card2_bg.png") 50% 100% no-repeat; margin-top: 1rem; padding-top: 2.5rem; }
 #visual .guidline .card:nth-child(3) { background: #f78c68 url("../../images/ipsi/card3_bg.png") 50% 100% no-repeat; }
 #visual .guidline .card:nth-child(4) { background: #fff url("../../images/ipsi/card4_bg.png") 100% 0 no-repeat; margin-top: 1rem; padding-top: 2.5rem; }
 #visual .guidline .card .year { display: block; font-size: .8rem; margin-bottom: .6rem; }
-#visual .guidline .card .year::after { content: ""; display: block; margin: .6rem auto; width: 1px; height: 1rem; background-color: rgba(0, 0, 0, 0.3); }
+/*#visual .guidline .card .year::after { content: ""; display: block; margin: .6rem auto; width: 1px; height: 1rem; background-color: rgba(0, 0, 0, 0.3); }*/
 #visual .guidline .card .title { display: block; font-size: 1.2rem; font-weight: 600; color: #333; margin-bottom: .7rem; }
 #visual .guidline .card .date { display: block; font-size: 1.05rem; color: #333; margin-bottom: 1.5rem; }
 #visual .guidline .card .btn { display: inline-block; font-size: .7rem; background-color: #333; padding: .5rem 1rem; color: #fff; }
@@ -53,6 +53,7 @@
 .section1.notice h2 span { font-size: 1.9rem; color: #333; display: block; }
 .section1.notice h2 small { font-size: .7rem; color: #636363; font-style: italic; text-transform: uppercase; position: relative; }
 .section1.notice h2 small::before { content: ""; display: block; width: 110%; height: 6px; background-color: #fec62d; position: absolute; left: 50%; bottom: 2px; z-index: -1; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.section1 .card-list::after{content:"";display:block;clear:both;}
 .section1 .card-list li { float: left; }
 .section1 .card-list li .card { border: 1px solid #e6cbc3; border-bottom-right-radius: 1rem; overflow: hidden; -webkit-transition: all .25s ease; transition: all .25s ease; }
 .section1 .card-list li .card .link { display: block; padding: 1.6rem 1.5rem; height: 14rem; background-color: #fff; }
@@ -96,11 +97,27 @@
 .section2 .banner-wrap .banner-group .banner3 { margin-top: 1rem; background: url("../../images/ipsi/banner3_bg.png") 0 0/cover no-repeat; }
 .section2 .banner-wrap .banner-group .title { display: block; font-size: .95rem; color: #333; margin-bottom: 1rem; }
 .section2 .banner-wrap .banner-group .cont { font-size: .7rem; color: #666; line-height: 1.5; }
-.section2 .banner-wrap .banner4 { background: url("../../images/ipsi/banner4.jpg") 0 0/cover no-repeat; text-align: center; padding: 2rem 3rem; }
-.section2 .banner-wrap .banner4 .title { display: inline-block; border: 1px solid #fff; padding: .3rem .5rem; font-size: .75rem; color: #fff; margin-bottom: 1.3rem; }
-.section2 .banner-wrap .banner4 li ~ li { margin-top: .5rem; }
-.section2 .banner-wrap .banner4 a { display: block; border-radius: 1.5rem; font-size: .8rem; padding: .7rem 0; background-color: #fff; -webkit-transition: all .25s ease; transition: all .25s ease; }
-.section2 .banner-wrap .banner4 a:hover { background-color: #6456cd; color: #fff; }
+.section2 .banner-wrap .banner4 { background: url("../../images/ipsi/banner4.jpg") 0 0/cover no-repeat; padding: 1rem  1.5rem; }
+.section2 .banner-wrap .banner4::after,
+.section2 .banner-wrap .banner5::after{content:"";display:block;clear:both;}
+.section2 .banner-wrap .banner4 .title,
+.section2 .banner-wrap .banner5 .title { display: block;float:left;  padding: .3rem .5rem; font-size: .95rem; color: #fff; margin-right: 2rem; }
+.section2 .banner-wrap .banner4 .title::after,
+.section2 .banner-wrap .banner5 .title::after{content:"";display:block;width:100%;height:2px;background-color:#50fff8;}
+.section2 .banner-wrap .banner5 .title::after{background-color:#cd93ff;}
+.section2 .banner-wrap .banner4 ul,
+.section2 .banner-wrap .banner5 ul{float:left;}
+.section2 .banner-wrap .banner4 ul li,
+.section2 .banner-wrap .banner5 ul li{display:inline-block;vertical-align:top;margin:0 .5rem;}
+
+.section2 .banner-wrap .banner4 a,
+.section2 .banner-wrap .banner5 a {display: block; border-radius: 50%; width:5.8rem;height:5.8rem;font-size: .8rem; padding: .7rem 0; background-color: #fff; display: -webkit-flex;display: flex;-webkit-align-items:center;align-items:center;justify-content: center; -webkit-transition: all .25s ease; transition: all .25s ease;  text-align:center;}
+.section2 .banner-wrap .banner4 a:hover { background-color: #0d9a94; color: #fff;transform:scale(1.1); }
+.section2 .banner-wrap .banner5 a:hover { background-color: #6456cd; color: #fff;transform:scale(1.1); }
+
+.section2 .banner-wrap .banner5{background: url("../../images/ipsi/banner5.jpg") 0 0/cover no-repeat;padding: 1rem 1.5rem; }
+.section2 .banner-wrap .banner5 small{display:block;font-size:.6rem;}
+
 
 @media screen and (max-width: 767px) { .section2 .banner-wrap .banner-group .banner2 { width: 50%; float: left; }
   .section2 .banner-wrap .banner-group .banner3 { width: 50%; float: left; margin-top: 0; } }

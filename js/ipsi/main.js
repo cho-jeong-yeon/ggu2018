@@ -7,6 +7,7 @@ $(document).ready(function(){
 		mode : 'horizontal',
 		controls : true,
 		pager: false,
+    shrinkItems : true,
 		maxSlides : 4,
 		minSlides : 1,
 		moveSlides : 1,

@@ -16,10 +16,6 @@ $(document).ready(function(){
     $('html, body').scrollTop(0);
   }, 200);
 
-  setTimeout(function(){
-    $('body').addClass('active');
-    //$('#visual svg').addClass('disable');
-  }, 300);
 
   setTimeout(function()
   {

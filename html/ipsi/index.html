@@ -24,6 +24,18 @@
 <body>
 <!-- Accessibility -->
 <a id="uppermost" href="#contents" class="skip-to">본문 바로가기</a>
+<!-- popup -->
+<div id="popup">
+	<div class="container">
+		<ul>
+			<li><a href=""><div class="container"><img src="../../images/kor/main/popup1.jpg" alt="" /></div></a></li>
+			<li><a href=""><div class="container"><img src="../../images/kor/main/popup1.jpg" alt="" /></div></a></li>
+			<li><a href=""><div class="container"><img src="../../images/kor/main/popup1.jpg" alt="" /></div></a></li>
+		</ul>
+		<a href="#none" class="close"><i class="xi-close"></i></a>
+	</div>
+</div>
+
 <div id="wrap">
 	<header id="header">
 		<div class="container">
@@ -84,15 +96,6 @@
 								<li><a href="sub0402.html">다양한 전공제도</a></li>
 							</ul>
 						</li>
-						<li class="depth1">
-							<a href="">학교안내</a>
-							<ul class="depth2">
-								<li><a href="sub0401.html">견학프로그램</a></li>
-								<li><a href="sub0402.html">기숙사</a></li>
-								<li><a href="sub0402.html">캠퍼스맵</a></li>
-								<li><a href="sub0402.html">입학홍보팀오는길</a></li>
-							</ul>
-						</li>
 					</ul>
 				</div>
 				<a href="#" class="total-search"><i class="xi-search"></i></a>
@@ -117,7 +120,7 @@
 			</div>
 		</div>
 	</header>
-	<div id="quick">
+	<!--<div id="quick">
 		<ul class="menu">
 			<li><a href="">POPUP</a></li>
 		</ul>
@@ -145,14 +148,14 @@
 				<a href="" class="close"></a>
 			</div>
 		</article>
-	</div>
+	</div>-->
 	<main id="main">
 	  <div id="visual">
 			<div class="list01">
 				<div class="bg"></div>
 				<div class="container">
 					<div class="desc">
-						<small>하나되어 꿈을 키워가는 아카데미</small>
+						<small>글로벌 융합형 혁신인재 양성</small>
 						<p class="title">
 							<span><em>g</em></span>
 							<span>e</span>
@@ -181,28 +184,30 @@
 				<div class="guidline">
 					<div class="container">
 						<div class="card">
-							<small class="year">2019학년도</small>
-							<strong class="title">수시모집</strong>
-							<span class="date">2018.9.10(월)~14(금)</span>
-							<a href="#" class="btn">모집요강</a>
+							<div class="vertical">
+								<small class="year">2019학년도</small>
+								<strong class="title">수시모집</strong>
+								<span class="date">2018.9.10(월)~14(금)</span>
+								<a href="#" class="btn">모집요강</a>
+							</div>
 						</div>
 						<div class="card">
-							<small class="year">2019학년도</small>
-							<strong class="title">정시모집</strong>
-							<span class="date">2018.9.10(월)~14(금)</span>
-							<a href="#" class="btn">모집요강</a>
+							<div class="vertical">
+								<strong class="title">공기업<br>공공기관취업</strong>
+								<a href="#" class="btn">상세보기</a>
+							</div>
 						</div>
 						<div class="card">
-							<small class="year">2019학년도</small>
-							<strong class="title">재외국민/외국인</strong>
-							<span class="date">2018.9.10(월)~14(금)</span>
-							<a href="#" class="btn">모집요강</a>
+							<div class="vertical">
+								<strong class="title">공무원 합격</strong>
+								<a href="#" class="btn">상세보기</a>
+							</div>
 						</div>
 						<div class="card">
-							<small class="year">2019학년도</small>
-							<strong class="title">편입학</strong>
-							<span class="date">2018.9.10(월)~14(금)</span>
-							<a href="#" class="btn">모집요강</a>
+							<div class="vertical">
+								<strong class="title">해외명문대학<br>진학</strong>
+								<a href="#" class="btn">상세보기</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -309,34 +314,61 @@
 					</div>
 				</div>
 				<div class="container">
-					<div class="banner-wrap">
-						<div class="banner1 col-xs-12 col-sm-6">
-							<a href="#">
-								<strong class="title">입학설명회/특강<i class="xi-plus"></i></strong>
-								<p><img src="../../images/ipsi/banner1.jpg" alt=""></p>
-							</a>
-						</div>
-						<div class="banner-group col-xs-12 col-sm-3">
-							<div class="banner2">
+					<div class="banner-wrap row">
+						<div class="col-sm-7 row">
+							<div class="banner1 col-sm-6">
 								<a href="#">
-									<strong class="title">전형일정</strong>
-									<p class="cont">2019학년도 전형일정을<br class="web"> 확인하실 수 있습니다.</p>
+									<strong class="title">입학결과<i class="xi-plus"></i></strong>
+									<p><img src="../../images/ipsi/banner1.jpg" alt=""></p>
 								</a>
 							</div>
-							<div class="banner3">
-								<a href="#">
-									<strong class="title">기숙사안내</strong>
-									<p class="cont">금강대학교만의 배려깊은<br class="web"> 기숙사를 안내합니다.</p>
-								</a>
+							<div class="banner-group col-sm-6">
+								<div class="banner2">
+									<a href="#">
+										<strong class="title">전형일정</strong>
+										<p class="cont">2019학년도 전형일정을<br class="web"> 확인하실 수 있습니다.</p>
+									</a>
+								</div>
+								<div class="banner3">
+									<a href="#">
+										<strong class="title">기숙사안내</strong>
+										<p class="cont">금강대학교만의 배려깊은<br class="web"> 기숙사를 안내합니다.</p>
+									</a>
+								</div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-3">
+						<div class="col-sm-5">
 							<div class="banner4">
 								<span class="title">전공안내</span>
 								<ul>
-									<li><a href="#">불교문화학부</a></li>
-									<li><a href="#">글로벌융합학부</a></li>
-									<li><a href="#">글로벌교양학부</a></li>
+									<li>
+										<a href="#">
+											<div class="vertical">불교문화<br>학부</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="vertical">글로벌융합<br>학부</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="banner5">
+								<span class="title">장학제도</span>
+								<ul>
+									<li>
+										<a href="#">
+											<div class="vertical">
+												<strong>전원<br> 전액 장학금</strong>
+												<small>(직전학기<br> 평점 3.0이상)</small>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="vertical">전원<br> 해외유학</div>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -370,9 +402,7 @@
 				<a href="#" class="point1">개인정보침해 및 처리방침</a>
 				<a href="#">이메일무단수집거부</a>
 				<div class="sns">
-					<a href="#"><i class="xi-facebook"></i><span class="sr-only">페이스북</span></a>
-					<a href="#"><i class="xi-naver-square"></i><span class="sr-only">네이버</span></a>
-					<a href="#"><i class="xi-youtube-play"></i><span class="sr-only">유투브</span></a>
+					<a href="https://adiga.kr/" target="_blank" title="새창으로열림"><img src="../../images/common/footer_adiga.gif" alt="대입정보포털 어디가"></a>
 				</div>
 			</div>
 		</div>

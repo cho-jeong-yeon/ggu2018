@@ -1,8 +1,7 @@
 $(document).ready(function(){
-
   setTimeout(function(){
-    $('body').addClass("start");
-  },500);
+    $('body').addClass('active start');
+  }, 300);
 
   $(".total-search").on('click', function() {
     $(this).addClass("active");
