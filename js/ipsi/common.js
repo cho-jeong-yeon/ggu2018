@@ -9,6 +9,12 @@ $(document).ready(function(){
       $(this).parent().removeClass('active');
       //$(this).find('li').removeClass('on');
     });
+    $(".all-menu").bind('focusin mouseover', function(){
+      $gnb.parent().addClass('active');
+    });
+    $(".all-menu").bind('focusout mouseleave', function(){
+      $(this).parent().removeClass('active');
+    });
   }else{
     $gnb.find('.depth1>a').click( function(){
       $(this).parent().parent().toggleClass('active').siblings().removeClass('active');
