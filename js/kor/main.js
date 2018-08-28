@@ -18,15 +18,16 @@ $(document).ready(function(){
 
   setTimeout(function(){
     $('body').addClass('active');
-    $('#visual svg').addClass('disable');
-  }, 2500);
+    //$('#visual svg').addClass('disable');
+  }, 300);
 
   setTimeout(function()
   {
     $('#visual').addClass('active');
 
-  }, 3000);
+  }, 500);
 
+/*
 // visual 꽃
   var path = $('#visual svg').find('path');
   path.each(function( i, path )
@@ -44,6 +45,7 @@ $(document).ready(function(){
       },speed);
     }, 400);
   });
+    */
 
 // visual bg 동동
   var timer;
@@ -51,6 +53,7 @@ $(document).ready(function(){
     clearTimeout(timer);
     timer = setTimeout( move , 100 );
   });
+
   var move = function (){
     $('.bg1, .bg2').toggleClass('active');
   };
@@ -75,22 +78,6 @@ $(document).ready(function(){
     controls		: true
   });
 
-  //금강을 읽다
-  $('.webzine ul').bxSlider
-  ({
-    auto			: true,
-    autoHover		: true,
-    speed			: 1000,
-    pause			: 5000,
-    //mode			: 'vertical',
-    responsive		: true,
-    pager			: false,
-    autoControls	: false,
-    controls		: true
-  });
-
-
-
   // 금강을누리다
   $('.popupzone ul').bxSlider
   ({
@@ -104,6 +91,50 @@ $(document).ready(function(){
     autoControls	: false,
     controls		: true
   });
+
+  //금강을 읽다
+  $('.cover-story > ul').bxSlider
+  ({
+    auto			: true,
+    autoHover		: true,
+    //infiniteLoop: false,
+    mode: 'horizontal',
+    speed			: 1000,
+    pause			: 2000,
+    responsive		: true,
+    maxSlides : 5,
+    minSlides : 1,
+    moveSlides : 1,
+    slideWidth : 367,
+    slideMargin : 48,
+    shrinkItems : true,
+    pager			: true,
+    autoControls	: false,
+    controls		: false,
+    onSlideAfter : function($slideElement, oldIndex, newIndex){
+      $('.cover-story .list-style li').removeClass('inactive');
+      $('.cover-story .list-style li').eq(newIndex + 5).addClass('inactive');
+      $('.cover-story .list-style li').eq(newIndex + 9).addClass('inactive');
+    }
+  });
+
+  /*
+  $('.webzine ul').bxSlider
+  ({
+    auto			: true,
+    autoHover		: true,
+    speed			: 1000,
+    pause			: 5000,
+    //mode			: 'vertical',
+    responsive		: true,
+    pager			: false,
+    autoControls	: false,
+    controls		: true
+  });
+*/
+
+
+
 
 
 
@@ -125,7 +156,7 @@ $(document).ready(function(){
           }
         });
       });
-    }, 5500);
+    }, 2500);
 
 
   $('.related .group').find('h2 a').on('click', function(){
