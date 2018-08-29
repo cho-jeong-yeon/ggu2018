@@ -237,7 +237,7 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 .accordion > li .title-wrap {  display: block;  border-bottom: 1px solid #ddd;  position: relative;  padding: 1.2rem 3rem 1.3rem 8rem;}
 .accordion > li .title-wrap .number {  border: 1px solid #ddd;  color: #000;  text-align: center;  padding: .4rem 0;  width:5rem;  font-size: .8rem; display: inline-block;  border-radius: 2.5rem;  -webkit-transition: all .25s ease;  transition: all .25s ease;  position: absolute;  left: 0;  top: 1rem;}
 .accordion > li .title-wrap:hover .number {  background-color: #eee;}
-.accordion > li .title-wrap .title {  font-size: 1rem;margin-bottom:0;}
+.accordion > li .title-wrap .title {  font-size: 1rem;margin-top:0;margin-bottom:0;}
 .accordion > li .title-wrap .arrow {  position: absolute;  top: .8rem;  right: 1rem;  font-size: 1.5rem;  border-radius: 50%;  padding: .3rem;  -webkit-transition: all .25s ease;  transition: all .25s ease;}
 .accordion > li .cont {  opacity: 0;  visibility: hidden;  max-height: 0;  overflow: hidden;  padding:0rem 3rem;  border-bottom: 1px solid #ddd;}
 .accordion > li .cont .title {  display: block;  margin: 0 0 .6rem;  position: relative;  padding-left: .5rem;}
@@ -338,13 +338,26 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 
 @media screen and (max-width: 991px) {
   html { font-size: 16px; }
-  .gnb{display:}
+  .gnb{display:none;}
 }
 
-@media screen and (max-width: 767px) { html { font-size: 14px; }
+@media screen and (max-width: 767px) {
+  html { font-size: 14px; }
   html, body, .wrap { min-width: inherit; }
   .web { display: none; }
   .mobile { display: block; }
+  #popup img{max-width:100%;}
+  #popup ul > li > a{height:auto;}
+  .active #popup{height:auto;}
+  #header nav{position:absolute;top:1.8rem;}
+  #header nav .all-menu{padding:0;}
+  #header .branch-site,
+  #header nav .total-search{display:none;}
+  #header .util{top:1.8rem;}
+  #header .util .eng-site,
+  #header .util .login{display:none;}
+  #header .util .member{ display: block;    width: 2.5rem;    height: 2.5rem;
+    padding: .5rem;    text-align: center;    background-color: #4bc7bb;    color: #fff;    font-size: 1.5rem;    position: absolute;    right: 0;   top: 0;}
 }
 
 /*# sourceMappingURL=layout.css.map */

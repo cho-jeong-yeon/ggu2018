@@ -66,7 +66,7 @@
 .section1 .card-list li .card .attach { display: block; padding: 1rem 1.5rem 1rem 3.5rem; font-size: .7rem; background-color: #f7f7f7; position: relative; }
 .section1 .card-list li .card .attach i { font-size: 1rem; width: 1.7rem; height: 1.7rem; line-height: 1.7rem; text-align: center; border-radius: 50%; background-color: #afa09b; color: #fff; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); position: absolute; left: 1rem; top: 1rem; }
 .section1 .card-list li .card:hover { border: 1px solid #77ddc7; -webkit-box-shadow: -3px -3px 0 #77ddc7; box-shadow: -3px -3px 0 #77ddc7; }
-.section1 .bx-wrapper { position: relative; }
+.section1 .bx-wrapper { position: relative; max-width:1200px!important;}
 .section1 .bx-viewport { position: relative; z-index: 1; padding: .4rem; height: auto !important; }
 .section1 .bx-controls { width: 100%; position: absolute; left: 50%; top: 50%; -webkit-transform: translateX(-51%); transform: translateX(-51%); }
 .section1 .bx-controls::before { content: ""; display: block; width: 200%; height: 1px; position: absolute; left: -50%; background-color: #e6cbc3; z-index: 0; }
