@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-
-.container { width: 1200px; margin: 0 auto; }
-
-
 /* 비주얼 */
 #visual {overflow:hidden; position:relative; z-index:0; padding:13rem 0 3.7rem; text-align:center;}
 #visual .grad {position:absolute; left:0; bottom:0; width:100%; height:70%; background-color:#f7ddd5; background:linear-gradient(rgba(248, 222, 214, 0), rgba(248, 222, 214, 1) 65%);}
@@ -252,7 +248,7 @@ background: linear-gradient(to bottom, #f8ded6 0%,#e7e3f1 100%); /* W3C, IE10+, 
 .webzine > p img {display:block; transition:all .2s; -webkit-transition:all .2s;}
 
 .webzine .thumbs {margin: 0 -.7rem;}
-.webzine .thumbs ul li { position:relative; width:25%; margin-bottom:1.7rem; opacity:0; padding: 0 .7rem;}
+.webzine .thumbs ul li { position:relative; margin-bottom:1.7rem; opacity:0; padding: 0 .7rem;}
 .webzine .thumbs ul li a {display:block; width: 100%;  border:1px solid #e1e0e0; font-size:.75rem; transition:all .3s ease; -webkit-transition:all .3s ease;}
 .webzine .thumbs ul li a .img {display:block; width: 100%; transition:all .5s ease; -webkit-transition:all .5s ease;}
 .webzine .thumbs ul li a .img img {display:block; max-width:100%;}
@@ -300,3 +296,10 @@ background: linear-gradient(to bottom, #f8ded6 0%,#e7e3f1 100%); /* W3C, IE10+, 
 /* 취업공지, 행정공지 활성화 */
 .latest.active {height:5.5rem; margin:4.5rem auto;}
 .latest.active + .go-top {opacity:1;}
+
+@media screen and (max-width: 1920px){
+  .cover-story{background-size:auto 772px;}
+}
+@media screen and (max-width: 767px) {
+  .cover-story.active:before, .cover-story.active:after{display:none;}
+}

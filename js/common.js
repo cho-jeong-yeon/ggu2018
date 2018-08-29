@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 });
 
-/*
+
 $(window).on("load scroll", function(){
 
 	var fixItem = $(".cont-top");
@@ -52,4 +52,3 @@ $(window).on("load scroll", function(){
   }
 
 });
-*/
