@@ -67,7 +67,7 @@
 .section1 .card-list li .card .attach i { font-size: 1rem; width: 1.7rem; height: 1.7rem; line-height: 1.7rem; text-align: center; border-radius: 50%; background-color: #afa09b; color: #fff; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); position: absolute; left: 1rem; top: 1rem; }
 .section1 .card-list li .card:hover { border: 1px solid #77ddc7; -webkit-box-shadow: -3px -3px 0 #77ddc7; box-shadow: -3px -3px 0 #77ddc7; }
 .section1 .bx-wrapper { position: relative; }
-.section1 .bx-viewport { position: relative; z-index: 1; padding: .4rem; height: auto !important; }
+.section1 .bx-viewport { position: relative; z-index: 1; padding: .4rem;}
 .section1 .bx-controls { width: 100%; position: absolute; left: 50%; top: 50%; -webkit-transform: translateX(-51%); transform: translateX(-51%); }
 .section1 .bx-controls::before { content: ""; display: block; width: 200%; height: 1px; position: absolute; left: -50%; background-color: #e6cbc3; z-index: 0; }
 .section1 .bx-prev, .section1 .bx-next { position: absolute; font-size: 0; display: block; width: 3.7rem; height: 3.7rem; border: 1px dotted #e7673b; text-align: center; line-height: 3.5rem; border-radius: 50%; -webkit-transition: all .25s ease; transition: all .25s ease; -webkit-transform: translateY(-50%); transform: translateY(-50%); background-color: #fff; }
@@ -120,9 +120,25 @@
 
 
 @media screen and (max-width: 767px) {
+  #visual .desc{margin-top:6rem;}
   #visual .desc .title{width:84%;}
   #visual .guidline .card{width:50%;height:10rem;}
   #visual .guidline .card:nth-child(3){margin-top:-1rem;}
   #visual .guidline .card:nth-child(4){margin-top:0;}
   #visual .desc .title em{margin-left:0;}
+  #visual .down{display:none;}
+  #visual .guidline{padding-left:.8rem;padding-right:.8rem;}
+  .section1 .bx-wrapper{padding-left:1.8rem;}
+  .section1 .bx-controls{z-index:55;}
+  .section1 .bx-controls::before{display:none;}
+  .section1 .bx-prev{left:1rem;right:inherit;}
+  .section1 .bx-next{right:.5rem;left:inherit;}
+  .section1::before{display:none;}
+  .section2{padding:2rem 0;}
+  .section2 .shortcut a{width:33.33%;}
+  .section2 .banner-wrap .banner-group a{height:5.35rem;padding:.7rem 1.2rem .7rem .7rem;}
+  .section2 .banner-wrap .banner-group .title{margin-bottom:.5rem;}
+  .section2 .banner-wrap .banner-group .banner3{margin-top:.5rem;}
+  .section2 .banner1 {padding-left:0;padding-right:.5rem;margin-bottom:1rem;}
+  .section2 .banner-group{padding-right:0;margin-bottom:1rem;}
 }
