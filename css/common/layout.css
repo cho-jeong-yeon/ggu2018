@@ -102,6 +102,7 @@
 #header.all-menu-open .all-menu-desc{display:block;}
 #header.all-menu-open .all-menu-close{display:block;}
 
+#header nav a[target="_blank"]::after{ content: "";  display: inline-block;  width: .55rem;  height: .6rem; margin-left:.3rem; background: url("../../images/common/icon_blank_green.gif") 0 0/cover no-repeat;   }
 
 /* ========== 서브레이아웃 ==========*/
 #spot { padding: 9rem 0 0; color: #fff; position: relative; background: no-repeat 50% 50%/cover; }
