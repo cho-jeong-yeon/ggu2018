@@ -200,7 +200,7 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
 
 /* 블릿 */
 .cont-mid .list {margin: .7rem 0;}
-.cont-mid .list > li, .cont-mid .list > .bul {position: relative; padding-left: 10px;}
+.cont-mid .list > li, .cont-mid .list > .bul, span.bul.dot {position: relative; padding-left: 10px;}
 /* 민트색 도트 */
 .cont-mid .list.dot > li {color:#333; font-weight: 400; margin: .5rem 0;}
 .cont-mid .list.dot > li::before, .bul.dot::before {content:''; width: .25rem; height: .25rem; border-radius:50%; background:#2ea89e; position:absolute; top:.4rem; left:0;}
@@ -388,7 +388,9 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
   #footer .footer-banner{display:none;}
   #footer .site-select3{margin-top:.5rem;}
 
-
+  .btns .btn {width: 100%; margin-bottom: .8rem;}
+  .cont-mid .btn + .btn {margin-left: 0;}
+  .cont-mid .btn > i {float:inherit;}
 }
 
 /*# sourceMappingURL=layout.css.map */
