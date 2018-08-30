@@ -2,10 +2,6 @@
 $(document).ready(function(){
 
 
-
-
-
-
 	//대메뉴
 	$('#gnb').on('mouseenter focusin', function(){
 		$(this).parents('#header').addClass('active');
@@ -22,12 +18,19 @@ $(document).ready(function(){
 	$('#gnb .depth2 > li').on('mouseenter focusin', function(){
 		$(this).addClass('active').siblings().removeClass('active');
 	});
+
 	$('.all-menu').on('click', function(){
 		$('#header').addClass('all-menu-open');
 	});
 	$('.all-menu-close').on('click', function(){
 		$('#header').removeClass('all-menu-open');
 	});
+	if($(window).width()>1024){
+			$('#gnb .depth1 > a').click(function(){
+				
+			})
+	})
+
 
   $('.service').find('a').on('mouseenter focusin', function()
   {
