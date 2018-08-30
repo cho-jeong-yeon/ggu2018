@@ -130,4 +130,15 @@ input + .control {margin-left: 2rem;}
 
   .sub0307 .img-responsive {display: none;}
   .sub0307 .txt {width: 100%;}
+
+  .sub0308 .row {margin-bottom: 2.5rem;}
+  .sub0308 .img::before {display: none;}
+  .sub0308 .row .txt {padding-top: 2rem;}
+
+  .sub0309 .row {margin-bottom: 2.5rem;}
+  .sub0309 .img::before {display: none;}
+  .sub0309 .row .txt {padding-top: 2rem;}
+
+  .sub0310 .img::before {display: none;}
+  .sub0310 .row .txt {padding-top: 2rem;}
 }
