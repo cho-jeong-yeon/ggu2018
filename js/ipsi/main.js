@@ -11,7 +11,8 @@ $(document).ready(function(){
 		maxSlides : 4,
 		minSlides : 1,
 		moveSlides : 1,
-		slideWidth : 300
+		slideWidth : 270,
+    slideMargin : 20
 	});
 
   $('#quick .menu').find('a').on('click', function()

@@ -363,13 +363,14 @@ strong.title.bul::before {content:''; width: 1.35rem; height: .1rem; background:
   #header .logo .admission-main{width:3.75rem;}
   #header nav .all-menu{left:.8rem;}
   #header .util .member{right:.8rem;}
-
+  #spot{padding-top:3rem;}
   #spot .cont-top .nav{height:2.3rem;}
   #spot .cont-top .nav .home{padding:.6rem;}
+  #spot .cont-top .nav [class^="depth"]{width:8.5rem;}
   #spot .cont-top .nav [class^="depth"] ul{top:2.3rem;}
   #spot .cont-top .nav [class^="depth"] ul li a{padding:.55rem;}
   #spot .cont-top .nav [class^="depth"] .title{padding:.6rem;}
-  #spot .cont-top .nav .sns .title{padding:.6rem;}
+  #spot .cont-top .nav .sns .title{padding:.7rem .6rem;}
   #spot .cont-top .nav .sns .sns-shortcut{top:2.3rem;}
   .cont-wrap .cont-mid{padding-left:.8rem;padding-right:.8rem;}
   .cont-mid .table-wrap{overflow-x:scroll;}

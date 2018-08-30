@@ -320,7 +320,7 @@ background: linear-gradient(to bottom, #f8ded6 0%,#e7e3f1 100%); /* W3C, IE10+, 
 @media screen and (max-width: 767px) {
 
   #quick{display:none;}
-  #visual > .desc .title{font-size:2.5rem;letter-spacing:-.2rem;}
+  #visual > .desc .title{font-size:2.5rem;letter-spacing:-.4rem;}
   #visual > .desc .title strong{font-size:2.5rem;letter-spacing:-.2rem;}
   .cover-story.active:before, .cover-story.active:after{display:none;}
 }
