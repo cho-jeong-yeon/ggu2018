@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+.container { width: 1200px; margin: 0 auto; }
 /* 팝업존 */
 #popup {overflow:hidden; height:0; text-align:center; background:#fdd000; transition:all .2s; -webkit-transition:all .2s;}
 #popup .container {position: relative;}
