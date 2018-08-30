@@ -3,7 +3,7 @@
 
 #contents {font-family: 'Noto Sans KR'; font-weight: 300; font-size:.8rem; color:#666;}
 #wrap {position: relative;}
-.mint {color:#2ea89e;}
+.mint {color:#2ea89e !important;}
 strong.black {color:#000; font-size:.85rem; display: block; margin: 1.5rem 0 .6rem; font-weight: 600;}
 
 .form-control {height: 1.9rem; display: inline-block;}
@@ -95,3 +95,8 @@ input + .control {margin-left: 2rem;}
 /* 내신성적 산출 */
 .schedule-info2 {}
 .schedule-info2 .btn.mint {min-width:auto;}
+
+
+/* 수시모집 */
+.border-box.link .list {margin: 0;}
+.border-box.link .list > li a:hover {text-decoration:underline; color:#4dc6bd;}
