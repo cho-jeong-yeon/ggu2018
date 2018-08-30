@@ -5,7 +5,7 @@
 #visual .grad {position:absolute; left:0; bottom:0; width:100%; height:70%; background-color:#f7ddd5; background:linear-gradient(rgba(248, 222, 214, 0), rgba(248, 222, 214, 1) 65%);}
 #visual .grad:before {position:absolute; top:30%; left:50%; width:400%; height:0; margin-left:-200%; padding:400% 0 0; background:radial-gradient(circle, rgba(248, 222, 214, .5) 50%, rgba(255, 255, 255, 0) 90%, transparent 95%); border-radius:43%; content:''; opacity:0;}
 #visual > .desc {position:relative; position:relative; z-index:0; padding:3.5rem 0; font-size:0.9rem; color:#fff;}
-#visual > .desc svg {position:fixed; left:50%; top:50%; z-index:-1; margin-top:-9.2rem; margin-left:-300px; opacity:.5; stroke:#000; stroke-width:.03px; fill:none;}
+#visual > .desc svg {position:fixed; left:50%; top:50%; z-index:-1; margin-top:-9.2rem; margin-left:-300px; opacity:0; stroke:#fff; stroke-width:.03px; fill:none;}
 #visual > .desc .disable {opacity:0; transition:all .5s; -webkit-transition:all .5s;}
 #visual > .desc span {opacity:0; transform: scale(0.2); -webkit-transform: scale(0.2);}
 #visual > .desc .title + p {opacity:0;}
@@ -137,7 +137,17 @@
 .card .item .link ul > li a:hover i::before {opacity:1;}
 .card .item .link ul > li a p {font-size:.7rem; color:#fff; letter-spacing:-1px; transition:all .3s ease; -webkit-transition:all .3s ease;}
 .card .item .link ul > li a:hover p {color:#333;}
-
+.card .item .tab-menu2 {    width: 100%;    position: relative;}
+.card .item .tab-menu2 > li.active > a {    background: #f78c68;    font-size: 1.2rem;}
+.card .item .tab-menu2 > li > a {    display: block;    float: left;    width: 50%;    line-height: 4.5rem;
+    color: #fff;    background: #333;    text-align: center;    font-size: 1.0rem;    position: relative;
+    transition: all .3s ease;    -webkit-transition: all .3s ease;}
+.card .item .tab-menu2 > li.active .list {    z-index: 1;    visibility: visible;    opacity: 1;}
+.card .item .tab-menu2 > li .list {    position: absolute;    top: 4.5rem;    left: 0;    background: #f78c68;    width: 100%;    overflow: hidden;    margin: 0;    padding: 1.5rem 2.4rem;    z-index: -1;
+    visibility: hidden;    opacity: 0;    transition: all .3s ease;    -webkit-transition: all .3s ease;
+}
+.card .item .tab-menu2 > li .list > li {    margin-bottom: 1.5rem;    padding-left: 0;}
+.card .item .tab-menu2 > li .list > li > a {    display: block;}
 
 /* 비주얼 카드 활성화 */
 .card.active .item {margin-top:0; opacity:1; transition:all .5s 0s; -webkit-transition:all .5s 0s;}
