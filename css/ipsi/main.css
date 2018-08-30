@@ -68,7 +68,7 @@
 .section1 .card-list li .card:hover { border: 1px solid #77ddc7; -webkit-box-shadow: -3px -3px 0 #77ddc7; box-shadow: -3px -3px 0 #77ddc7; }
 .section1 .bx-wrapper { position: relative; }
 .section1 .bx-viewport { position: relative; z-index: 1; padding: .4rem;}
-.section1 .bx-controls { width: 100%; position: absolute; left: 50%; top: 50%; -webkit-transform: translateX(-51%); transform: translateX(-51%); }
+.section1 .bx-controls { width: 100%; position: absolute; left: 50%; top: 50%; -webkit-transform: translateX(-51%); transform: translateX(-51%);z-index:1; }
 .section1 .bx-controls::before { content: ""; display: block; width: 200%; height: 1px; position: absolute; left: -50%; background-color: #e6cbc3; z-index: 0; }
 .section1 .bx-prev, .section1 .bx-next { position: absolute; font-size: 0; display: block; width: 3.7rem; height: 3.7rem; border: 1px dotted #e7673b; text-align: center; line-height: 3.5rem; border-radius: 50%; -webkit-transition: all .25s ease; transition: all .25s ease; -webkit-transform: translateY(-50%); transform: translateY(-50%); background-color: #fff; }
 .section1 .bx-prev::before, .section1 .bx-next::before { content: "\e93d"; font-family: "xeicon"; font-size: 1.4rem; color: #e7673b; }
@@ -129,7 +129,6 @@
   #visual .down{display:none;}
   #visual .guidline{padding-left:.8rem;padding-right:.8rem;}
   .section1 .bx-wrapper{padding-left:1.8rem;}
-  .section1 .bx-controls{z-index:55;}
   .section1 .bx-controls::before{display:none;}
   .section1 .bx-prev{left:1rem;right:inherit;}
   .section1 .bx-next{right:.5rem;left:inherit;}
