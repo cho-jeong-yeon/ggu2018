@@ -323,7 +323,9 @@ background: linear-gradient(to bottom, #f8ded6 0%,#e7e3f1 100%); /* W3C, IE10+, 
 }
 @media screen and (max-width: 767px) {
 
-  #quick{display:none;}
+  #quick,
+  #quick-popup{display:none;}
+
   #visual{padding:3rem 0 0;}
   #visual > .desc{padding-left:0;padding-right:0;}
   #visual > .desc .img{zoom:.5;}
@@ -365,6 +367,6 @@ background: linear-gradient(to bottom, #f8ded6 0%,#e7e3f1 100%); /* W3C, IE10+, 
   .item.service{margin-top:0;padding:2rem 2rem 8rem;}
   .item.service h3 span{zoom:.5;right:-2rem;top:-2rem;z-index:1;}
   .item.service >ul{position:relative;z-index:2;}
-  .webzine{padding-left:.8rem;padding-right:.8rem;padding-bottom:0;}  
+  .webzine{padding-left:.8rem;padding-right:.8rem;padding-bottom:0;}
 
 }

@@ -23,8 +23,13 @@ $(document).ready(function(){
   setTimeout(function()
   {
     $('#visual').addClass('active');
+    $('#quick-popup').addClass("active");
 
   }, 500);
+  setTimeout(function()
+  {
+    $('#quick-popup').removeClass("active");
+  }, 5000);
 
 /*
 // visual 꽃

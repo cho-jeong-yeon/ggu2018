@@ -17,9 +17,15 @@ $(document).ready(function(){
     });
   }else{
     $gnb.find('.depth1>a').click( function(){
-      $(this).parent().parent().toggleClass('active').siblings().removeClass('active');
+      $(this).parent().toggleClass('active').siblings().removeClass('active');
       //$header.addClass("pull");
       return false;
     });
+    $('.all-menu').on('click', function(){
+  		$('#header').addClass('all-menu-open');
+  	});
+  	$('.all-menu-close').on('click', function(){
+  		$('#header').removeClass('all-menu-open');
+  	});
   }
 });

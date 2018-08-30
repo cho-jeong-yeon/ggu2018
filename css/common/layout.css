@@ -330,9 +330,11 @@ input + .control {margin-left: 2rem;}
 
 .mobile { display: none; }
 
-@media screen and (max-width: 1920px) { /*#header .nav{width:calc(100% - 35rem);}*/
+/*
+@media screen and (max-width: 1920px) {
   #header .nav .gnb .depth1 > a { padding-left: .2rem; padding-right: .2rem; }
 }
+*/
 
 @media screen and (max-width: 1620px) {
   /*html { font-size: 18px; }*/
@@ -352,11 +354,11 @@ input + .control {margin-left: 2rem;}
   #popup img{max-width:100%;}
   #popup ul > li > a{height:auto;}
   .active #popup{height:auto;}
-  #header nav{position:absolute;top:1.8rem;}
+  #header nav{position:absolute;top:1.8rem;width:100%;}
   #header nav .gnb{display:none;}
   #header.all-menu-open .all-menu-desc{display:none;}
   #header.all-menu-open nav{padding-left:0;}
-  #header.all-menu-open nav .gnb{display:block;}
+  #header.all-menu-open nav .gnb{display:block;height:auto;overflow-y:visible;}
   #header.all-menu-open nav .gnb .depth1 > a,
   #header.all-menu-open .depth1 .depth2-wrap{width:100%;float:none;}
   #header.all-menu-open nav .gnb .depth2 > li > a{width:100%;margin-left:0;padding:.6rem;}
@@ -364,9 +366,14 @@ input + .control {margin-left: 2rem;}
   #header.all-menu-open nav .gnb .depth2 > li:hover > a::before{display:none;}
   #header.all-menu-open .depth1 .depth2-wrap{height:0;overflow:hidden;transition:all .3s ease;}
   #header.all-menu-open .depth1.active .depth2-wrap{height:auto;}
+  #header.all-menu-open nav .gnb .depth2 > li .depth3{display:none;}
+  #header.all-menu-open nav .gnb .depth1:hover > a::before,
+  #header.all-menu-open nav .gnb .depth1.active > a::before { width: 100%; }
+  #header .depth2-bg{display:none;}
   #header nav .all-menu{padding:0;}
   #header .branch-site,
   #header nav .total-search{display:none;}
+
   #header .util{top:1.8rem;}
   #header .util .eng-site,
   #header .util .login{display:none;}
@@ -402,7 +409,7 @@ input + .control {margin-left: 2rem;}
   #footer .footer-nav{padding:.5rem;}
   #footer .branch-site{overflow-x:scroll;}
   #footer .branch-site .container{min-width:610px;}
-  #footer .footer-nav .container{padding-right:9rem;overflow-x:scroll;}
+  #footer .footer-nav .container{padding-right:9rem;}
   #footer .footer-section{padding:1rem .5rem;}
   #footer .relate-site{position:relative;margin-top:.5rem;}
   #footer .relate-site > div .title{padding-right:2rem;}
