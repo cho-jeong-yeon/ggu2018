@@ -16,7 +16,10 @@ $(document).ready(function(){
     $('html, body').scrollTop(0);
   }, 200);
 
-
+  setTimeout(function(){
+      $('body').addClass('active');
+      //$('#visual svg').addClass('disable');
+    }, 300);
   setTimeout(function()
   {
     $('#visual').addClass('active');
@@ -55,6 +58,9 @@ $(document).ready(function(){
   };
 
   $('.card .item .tab-menu > li > a').click(function(){
+    $(this).parent().addClass('active').siblings().removeClass('active');
+  });
+  $('.card .item .tab-menu2 > li > a').click(function(){
     $(this).parent().addClass('active').siblings().removeClass('active');
   });
 
