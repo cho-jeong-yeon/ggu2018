@@ -26,17 +26,6 @@ display: -ms-flexbox; align-items: center; -ms-flex-pack: center; min-height:4.2
 .tab-con{display:none;}
 #tab1{display:block;}
 
-/* 팝업존 */
-#popup {overflow:hidden; height:150px; text-align:center; background:#fdd000; transition:all .2s; -webkit-transition:all .2s;}
-#popup .container {position: relative;}
-#popup ul > li > a {display:block; width: 100%; height:150px;}
-#popup .bx-pager {position:absolute; top:70px; left:50%; z-index:2; width:1100px; margin-left:-550px; text-align:left;}
-#popup .bx-pager-item {display:inline; vertical-align:top;}
-#popup .bx-pager-link {display:inline-block; overflow:hidden; width:8px; height:8px; margin-right:25px; border-radius:100%; background-color:#fff; color:transparent; vertical-align:top; transition:all .2s; -webkit-transition:all .2s;}
-#popup .bx-pager-link.active {background-color:#333;}
-#popup .close {position:absolute; top: 2.5rem; right:0; display:block; width: 30px; height: 30px; font-size:1.5rem; color:#333; z-index: 2;}
-#popup.close {height: 0; transition-delay:0s;}
-
 /* sub0402 */
 .card-list li img{float:left;margin-right:1rem;}
 .card-list .card-item{border:1px solid #ddd;background-color:#f8f8f8;padding:.7rem;margin-bottom:.9rem;}
@@ -85,7 +74,7 @@ display: -ms-flexbox; align-items: center; -ms-flex-pack: center; min-height:4.2
 
 
 @media (max-width:1200px) {
-  .container {padding: 0 .75rem;}
+
 }
 
 

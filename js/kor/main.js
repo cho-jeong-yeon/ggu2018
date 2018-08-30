@@ -77,6 +77,7 @@ $(document).ready(function(){
     responsive		: true,
     pager			: false,
     autoControls	: false,
+    shrinkItems : true,
     controls		: true
   });
 
