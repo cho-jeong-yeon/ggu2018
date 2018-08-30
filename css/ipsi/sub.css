@@ -37,13 +37,7 @@ strong.black {color:#000; font-size:.85rem; display: block; margin: 1.5rem 0 .6r
 .caution {position: relative; padding-left: 1.2rem; margin: .3rem; color:#666;}
 .caution i {color:#2ea89e;}
 
-.control {position: relative; cursor:pointer; display: inline-block;}
-.control input[type="radio"], .control input[type="checkbox"] {opacity:0; }
-.cont-mid .table-wrap .control label {padding-left: .5rem;  cursor:pointer;}
-.control.radio label::before, .control.radio label::after {content:''; position:absolute; top:0; left:0;}
-.control.radio label::before {width: 1rem; height: 1rem; background:#fff; border:1px solid #ddd; border-radius:50%; transition:all .3s ease; -webkit-transition:all .3s ease;}
-.control.radio input[type="radio"]:checked + label::after {top: .25rem; left: .25rem; width: .5rem; height: .5rem; border-radius:50%; background:#49c8ba; z-index: 2;}
-input + .control {margin-left: 2rem;}
+
 
 .cont-mid hr.line {margin: 2rem 0;}
 
