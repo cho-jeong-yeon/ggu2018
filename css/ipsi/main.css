@@ -92,9 +92,10 @@
 .section2 .shortcut a:nth-child(6) .icon { background-position: -29rem 0; }
 .section2 .banner-wrap .banner1 a .title { position: absolute; right: 0rem; top: -.5rem; background-color: #20b5b9; color: #fff; padding: .8rem 1.6rem; font-size: 1.3rem; }
 .section2 .banner-wrap .banner1 a .title .xi-plus { margin-left: 1rem; }
-.section2 .banner-wrap .banner-group a { display: block; height: 7.35rem; /*border:4px solid #8bc7d3;*/ padding: 1.4rem 1.2rem; }
-.section2 .banner-wrap .banner-group .banner2 { background: url("../../images/ipsi/banner2_bg.png") 0 0/cover no-repeat; }
-.section2 .banner-wrap .banner-group .banner3 { margin-top: 1rem; background: url("../../images/ipsi/banner3_bg.png") 0 0/cover no-repeat; }
+.section2 .banner-wrap .banner-group a { display: block;  position:relative;}
+.section2 .banner-wrap .banner-group .title { position:absolute;z-index:1;left:1.2rem;top:1.4rem;}
+.section2 .banner-wrap .banner-group .cont { position:absolute;z-index:1;left:1.2rem;top:3.4rem;}
+.section2 .banner-wrap .banner-group .banner3 { margin-top: 1rem; }
 .section2 .banner-wrap .banner-group .title { display: block; font-size: .95rem; color: #333; margin-bottom: 1rem; }
 .section2 .banner-wrap .banner-group .cont { font-size: .7rem; color: #666; line-height: 1.5; }
 .section2 .banner-wrap .banner4 { background: url("../../images/ipsi/banner4.jpg") 0 0/cover no-repeat; padding: 1rem  1.5rem; }
@@ -135,7 +136,6 @@
   .section1::before{display:none;}
   .section2{padding:2rem 0;}
   .section2 .shortcut a{width:33.33%;}
-  .section2 .banner-wrap .banner-group a{height:5.35rem;padding:.7rem 1.2rem .7rem .7rem;}
   .section2 .banner-wrap .banner-group .title{margin-bottom:.5rem;}
   .section2 .banner-wrap .banner-group .banner3{margin-top:.5rem;}
   .section2 .banner1 {padding-left:0;padding-right:.5rem;margin-bottom:1rem;}
