@@ -34,6 +34,7 @@
 .sub010103 {}
 .sub010103 .gray-border-box {padding: 3.5rem 1.5rem; margin-bottom: 3rem;}
 .sub010103 .gray-border-box img {margin: 0 auto; display: block;}
+.sub010103 .gray-border-box img.mobile {display: none;}
 
 
 /* 총장인사말 */
@@ -218,7 +219,7 @@ h2.title + .border-box.icon {margin-top: 1.3rem;}
 .row.professors > li > a .card .txt {float: left; width:calc(100% - 106px); height: 140px; background:#f7f5f5; padding:0 1.5rem; z-index: 2; position: absolute; bottom: 0; right: 0; transition:all .3s ease; -webkit-transition:all .3s ease;}
 .row.professors > li > a .card .name {width: 40%; float: left; padding-top: 1.1rem;}
 .row.professors > li > a .card .name em {font-size:.9rem; display: block; padding: 0 0 .2rem; vertical-align: top; word-break:keep-all;}
-.row.professors > li > a .card .name span {font-size:1.5rem; font-weight: 600; letter-spacing:.05rem;}
+.row.professors > li > a .card .name span {font-size:1.4rem; font-weight: 600; letter-spacing:.03rem;}
 .row.professors > li > a .card .name span > em {font-size:1rem; display:inline; vertical-align: bottom; letter-spacing:0;}
 .row.professors > li > a .card .name p {font-size:.9rem; margin: 0; font-weight: 500;}
 .row.professors > li > a .card .info {width: 60%; float: left; padding-left: .5rem; padding-top: 1.1rem;}
@@ -390,6 +391,42 @@ display: -ms-flexbox; align-items: center; -ms-flex-pack: center; min-height:4.2
   .accordion > li.active .cont {padding:1rem 1.5rem}
 
   .sub010201 .row > li:nth-child(3) {min-height:10rem;}
+
+  .sub010202 .intro > li:first-child .name {right:inherit; left:0;}
+  .sub010202 .career::before {display: none;}
+  .sub010202 .career > li .year::before {display: none;}
+  .sub010202 .career > li .year::after {display: none;}
+
+  .sub010202 .intro .gray {padding:.5rem 1.5rem; background:#f1f1f0;}
+  .sub010202 .career > li > .list p {width: 63%; vertical-align: top;}
+
+  .sub010301 .category {float: inherit;}
+
+  .history .table-wrap .year-box .year {width: 100%;}
+  .history .table-wrap .table .year-box > ul {width: 100%;}
+  .history .table-wrap .table .year-box > ul > li > p {width: 100%; margin-bottom: .5rem;}
+  .history .table-wrap .table .year-box > ul > li > ul {width: 100%;}
+
+  .sub010402 .border-thin-box {padding:2.5rem 1rem;}
+
+  .sub010403 .music-box > li {display: block; padding: 1rem 2rem 3rem; }
+
+  .organization .org-tree {padding-top:3rem;}
+  .organization .org-tree .executive > a {margin: 0 .5rem; width: 7rem;}
+  .organization .org-tree .secretary {width: 7rem; transform: translateX(8%); -webkit-transform:translateX(8%);}
+  .organization .org-tree .secretary::before {left:-.6rem; width: .6rem;}
+  .organization .org-tree .sub-org .third {margin-bottom: 1rem;}
+
+  .border-box {padding:1.5rem}
+  .border-box.icon {padding-left:1.5rem;}
+  .border-box.icon img {display: none;}
+
+  .professional-ability li img {width: 5rem;}
+
+  .flow-arr > li {float:inherit;}
+
+  .sub010103 .gray-border-box img.web {display: none;}
+  .sub010103 .gray-border-box img.mobile {display: block;}
 }
 
 
@@ -398,4 +435,12 @@ display: -ms-flexbox; align-items: center; -ms-flex-pack: center; min-height:4.2
 
   .sub010102 img {float: inherit; display: block; margin: 0 auto 2rem; width:inherit;}
   .sub010102 .txt {float: inherit; width: 100%;}
+
+  .row.professors > li > a .card .name {float:inherit; width: 100%;}
+  .row.professors > li > a .card .txt {height:inherit;}
+  .row.professors > li > a .card .info {float:inherit; width:100%; padding-left: 0; padding-top: .5rem; padding-bottom: 1rem; }
+
+  .card-list li img {float:inherit;}
+
+
 }
