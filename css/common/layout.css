@@ -125,7 +125,7 @@
 #spot .cont-top .nav [class^="depth"] { float: left; position: relative; width: 10.5rem; }
 #spot .cont-top .nav [class^="depth"] ul { opacity: 0; visibility: hidden; position: absolute; top: 3.5rem; width: 100%; z-index: 3; overflow: hidden; -webkit-transition: all .3s ease; transition: all .3s ease; }
 #spot .cont-top .nav [class^="depth"] ul::after { content: ""; display: block; clear: both; }
-#spot .cont-top .nav [class^="depth"] ul li a { display: block; padding: 1.1rem; background-color: #a9a6ab; border-top: 1px solid #9b999d; }
+#spot .cont-top .nav [class^="depth"] ul li a { display: block;font-size:.75rem; padding: .6em 0 .6rem 1.1rem; background-color: #a9a6ab; border-top: 1px solid #9b999d; }
 #spot .cont-top .nav [class^="depth"] ul li a::after { content: "\e907"; display: block; font-family: "xeicon"; opacity: 0; -webkit-transform: translateX(-10px); transform: translateX(-10px); -webkit-transition: all 0.25s ease; transition: all 0.25s ease; float: right; }
 #spot .cont-top .nav [class^="depth"] ul li a:hover { color: #fff; text-decoration: underline; }
 #spot .cont-top .nav [class^="depth"] ul li a:hover::after { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px); }
@@ -358,6 +358,7 @@ input + .control {margin-left: 2rem;}
   #popup img{max-width:100%;}
   #popup ul > li > a{height:auto;}
   .active #popup{height:auto;}
+  .active #popup.close{height:0;}
   #header nav{position:absolute;top:1.8rem;width:100%;}
   #header nav .gnb{display:none;}
   #header.all-menu-open .all-menu-desc{display:none;}

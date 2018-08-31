@@ -100,7 +100,7 @@
 
 
 /* 퀵메뉴 내용 */
-#quick-popup .group {width:1200px; height:400px;position:absolute; left:50%; top:12rem;transform:translateX(-50%); z-index:50; opacity:0; transition:all .3s; }
+#quick-popup .popup {width:1200px; height:400px;position:absolute; left:50%; top:12rem;transform:translateX(-50%); z-index:50; opacity:0; visibility:hidden; transition:all .3s; }
 #quick-popup .banner li{display:inline-block;}
 #quick-popup .banner li .number{display:block;font-size:2rem;text-align:right;font-family:"Gotham";font-weight:500;margin-bottom:1rem; position:relative;}
 #quick-popup .banner li .number::after{content:"";display:block;height:1px;background-color:#fff;width:calc(100% - 4rem);position:absolute;left:0;top:1.2rem;}
@@ -117,7 +117,7 @@
 /* 퀵메뉴 활성화 */
 #quick-popup.active .menu a {color:#333;}
 #quick-popup.active .menu .active a {color:#fff;}
-#quick-popup.active .group {opacity:1;}
+#quick-popup.active .popup {opacity:1;}
 #quick-popup.active .close {opacity:1;}
 
 

@@ -87,44 +87,52 @@ $(document).ready(function(){
   });
 
   // 금강을누리다
-  $('.popupzone ul').bxSlider
-  ({
-    auto			: true,
-    autoHover		: true,
-    speed			: 1000,
-    pause			: 5000,
-    mode			: 'vertical',
-    responsive		: true,
-    pager			: false,
-    autoControls	: false,
-    controls		: true
-  });
+  setTimeout(function()
+  {
+    $('.popupzone ul').bxSlider
+    ({
+      auto			: true,
+      autoHover		: true,
+      speed			: 1000,
+      pause			: 5000,
+      mode			: 'vertical',
+      responsive		: true,
+      pager			: false,
+      autoControls	: false,
+      controls		: true
+    });
+  }, 1000);
+
 
   //금강을 읽다
-  $('.cover-story > ul').bxSlider
-  ({
-    auto			: true,
-    autoHover		: true,
-    //infiniteLoop: false,
-    mode: 'horizontal',
-    speed			: 1000,
-    pause			: 2000,
-    responsive		: true,
-    maxSlides : 5,
-    minSlides : 1,
-    moveSlides : 1,
-    slideWidth : 367,
-    slideMargin : 48,
-    shrinkItems : true,
-    pager			: true,
-    autoControls	: false,
-    controls		: false,
-    onSlideAfter : function($slideElement, oldIndex, newIndex){
-      $('.cover-story .list-style li').removeClass('inactive');
-      $('.cover-story .list-style li').eq(newIndex + 5).addClass('inactive');
-      $('.cover-story .list-style li').eq(newIndex + 9).addClass('inactive');
-    }
-  });
+  setTimeout(function()
+  {
+    $('.cover-story > ul').bxSlider
+    ({
+      auto			: true,
+      autoHover		: true,
+      //infiniteLoop: false,
+      mode: 'horizontal',
+      speed			: 1000,
+      pause			: 2000,
+      responsive		: true,
+      maxSlides : 5,
+      minSlides : 1,
+      moveSlides : 1,
+      slideWidth : 367,
+      slideMargin : 48,
+      shrinkItems : true,
+      pager			: true,
+      autoControls	: false,
+      controls		: false,
+      onSlideAfter : function($slideElement, oldIndex, newIndex){
+        $('.cover-story .list-style li').removeClass('inactive');
+        $('.cover-story .list-style li').eq(newIndex + 5).addClass('inactive');
+        $('.cover-story .list-style li').eq(newIndex + 9).addClass('inactive');
+      }
+    });
+  }, 1000);
+
 
   /*
   $('.webzine ul').bxSlider
