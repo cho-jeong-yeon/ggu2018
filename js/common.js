@@ -22,9 +22,11 @@ $(document).ready(function(){
 
   $(".total-search").on('click', function() {
     $(this).addClass("active");
+    $("#header nav").addClass("dimm");
   });
   $(".total-search-close").on('click', function() {
     $(".total-search").removeClass("active");
+    $("#header nav").removeClass("dimm");
   });
     //contents
 
