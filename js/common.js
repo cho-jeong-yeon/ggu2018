@@ -63,6 +63,14 @@ $(document).ready(function(){
     		$(this).find("table caption").html('<strong>' + tableTitle + '</strong>' + '<span>' + thArrayStr.substring(2) + '에 관한 정보' + '</span>' );
     	});
 
+
+  // 탭 개수
+  var tabNum = $(".cont-mid .tabs>li");
+  tabNum.each(function(){
+    if(tabNum.length > 6){
+      tabNum.parent().addClass("six-over");
+    }
+  });
 });
 
 

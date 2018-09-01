@@ -34,9 +34,6 @@ $(document).ready(function(){
 	});
 
 
-
-
-
   $('.service').find('a').on('mouseenter focusin', function()
   {
     $(this).parent('li').siblings('li').removeClass('active');
@@ -54,6 +51,8 @@ $(document).ready(function(){
 	$('#quick .menu').find('a').on('click', function()
 	{
 		$(this).parents('#quick').addClass('active');
+		$("#quick .group").removeClass("active");
+		$($(this.hash)).addClass("active");
 
 		return false;
 	});

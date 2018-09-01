@@ -182,7 +182,6 @@ background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 55%,rg
 background: -webkit-linear-gradient(top, #f8ded6 0%,#e7e3f1 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #f8ded6 0%,#e7e3f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-.guide:before {position:absolute; left:0; top:0; z-index:-1; width:100%; height:0; background:url('../../images/kor/main/guide_bg.jpg'); background-size:100% 493px; content:'';}
 
 .guide .title span{color:#999;}
 .guide .group {display:inline-block; width:1200px; max-width:100%;}
